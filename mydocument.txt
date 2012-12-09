@@ -18,9 +18,12 @@ find . -type f -not \( -name "*.exe" -o -name "*.o" \)
 du -sk /usr/*
 
 
-
-コマンド実行結果を引数にとる
+------コマンド実行結果を引数にとる-------
 xargs または$(コマンド)または`コマンド`
+
+------TeX------
+jlisting.styのおき場所（新たに置いたらmktexlsrしてls-Rデータベース更新する）
+/usr/share/texmf/tex/latex/jlisting.sty
 
 
 

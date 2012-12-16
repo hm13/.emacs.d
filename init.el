@@ -1,3 +1,55 @@
+;;;Add load path
+(setq load-path
+      (append
+       (list
+	(expand-file-name "~/.emacs.d/auto-install/")
+	)
+       load-path))
+
+;;;Config of open-junk-file.el
+(require 'open-junk-file)
+;;Open junk file by typing C-x C-z
+(global-set-key (kbd "C-x C-z") 'open-junk-file)
+
+;;;Config of lispxmp.el
+(require 'lispxmp)
+;;Write note by typing C-x C-d under the emacs-lisp-mode
+(define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
+
+;; ;;;Config of paredit.el
+;; (require 'paredit)
+;; (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+;; (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
+;; (add-hook 'lisp-mode-hook 'enable-paredit-mode)
+;; (add-hook 'ielm-mode-hook 'enable-paredit-mode)
+
+;; ;;;Config of auto-async-byte-compile.el
+;; (require 'auto-async-byte-compile)
+;; ;;Regex of file which will be disabled this elisp
+;; (setq auto-async-byte-compile-exclude-files-regexp "/junk/")
+;; (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
+;; (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
+;; (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
+;; (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+;; (setq eldoc-idle-delay 0.2);Display immediately
+;; (setq eldoc-minor-mode-string "");Don't show "ElDoc" in mode line
+
+;;Highlight counterpart of the parenthesis
+(show-paren-mode 1)
+;;Indent when start a new line
+(global-set-key "\C-m" 'newline-and-indent)
+;;Assign find-function
+(find-function-setup-keys)
+
+
+;; ;;;Config of auto-install.el
+;; (add-to-list 'load-path "~/.emacs.d/auto-install/")
+;; (require 'auto-install)
+;; (auto-install-update-emacswiki-package-name t)
+;; (auto-install-compatibility-setup)
+;; (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+
 ;;;Don't divide window when type C-x C-b
 (global-set-key [(C x) (C b)] 'buffer-menu)
 

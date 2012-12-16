@@ -6,6 +6,7 @@
 C-x C-e  ポイント直前の式を評価
 M-x eval-region
 M-x eval-current-buffer
+M-:
 
 ------ファイル検索-------
 ファイル検索　除外

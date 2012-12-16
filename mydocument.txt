@@ -13,10 +13,11 @@ find [検索パス] -not -name "除外ファイル名"
 ファイル検索　複数ファイル除外
 find . -type f -not \( -name "*.exe" -o -name "*.o" \)
 
-
 ------ファイル容量確認------
 du -sk -h /usr/*
 
+------拡張子の一括変更（.txtをすべて.texに）------
+find . -name "*.tex" | while read f; do mv "$f" "${f%.*}.txt"; done
 
 ------コマンド実行結果を引数にとる-------
 xargs または$(コマンド)または`コマンド`

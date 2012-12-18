@@ -150,10 +150,9 @@
 		  '(lambda ()
 		     (c-set-style "linux")
 		; センテンスの終了である ';' を入力したら、自動改行+インデント
-		     (c-toggle-auto-hungry-state 1)
-			 (setq c-basic-offset 4) ;インデント幅
-			 (setq tab-width c-basic-offset)
-			 (setq indent-tabs-mode t) ;インデントはタブで
-			 ; RET キーで自動改行+インデント
-			 (define-key c-mode-base-map "\C-m" 'newline-and-indent)
-			 ))
+		     (setq c-basic-offset 4) ;インデント幅
+		     (setq tab-width c-basic-offset)
+		     (setq indent-tabs-mode t) ;インデントはタブで
+		; RET キーで自動改行+インデント
+		     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
+		     ))

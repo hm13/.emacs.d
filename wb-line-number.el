@@ -1,7 +1,9 @@
+;;;Memo;;;
 ;更新日時　2012/6/28
 ;変更点
 ;・行番号色 pink→green
 ;・左サイドバー pink→green
+
 
 ;;; wb-line-number.el --- window-based line number displaying
 ;;

@@ -26,6 +26,3 @@ jlisting.styのおき場所（新たに置いたらmktexlsrしてls-Rデータ�
 /usr/share/texmf/tex/latex/jlisting.sty
 
 
-------Mount and unmount USB Flash Memory------
-mount_msdosfs /dev/da0s1 /mnt
-umount /mst

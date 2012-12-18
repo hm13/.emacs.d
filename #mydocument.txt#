@@ -6,7 +6,6 @@
 C-x C-e  ポイント直前の式を評価
 M-x eval-region
 M-x eval-current-buffer
-M-:
 
 ------ファイル検索-------
 ファイル検索　除外
@@ -14,11 +13,10 @@ find [検索パス] -not -name "除外ファイル名"
 ファイル検索　複数ファイル除外
 find . -type f -not \( -name "*.exe" -o -name "*.o" \)
 
+
 ------ファイル容量確認------
 du -sk -h /usr/*
 
-------拡張子の一括変更（.txtをすべて.texに）------
-find . -name "*.tex" | while read f; do mv "$f" "${f%.*}.txt"; done
 
 ------コマンド実行結果を引数にとる-------
 xargs または$(コマンド)または`コマンド`
@@ -28,6 +26,3 @@ jlisting.styのおき場所（新たに置いたらmktexlsrしてls-Rデータ�
 /usr/share/texmf/tex/latex/jlisting.sty
 
 
-------Mount and unmount USB Flash Memory------
-mount_msdosfs /dev/da0s1 /mnt
-umount /mst

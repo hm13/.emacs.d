@@ -128,31 +128,34 @@
 ;;;コメントの色を変更
 (set-face-foreground 'font-lock-comment-face "MediumSeaGreen")
 
+
+
 ;;;Ruby自動改行とインデント設定
 (add-hook 'ruby-mode-hook
-		  '(lambda()
-			 (define-key ruby-mode-base-map "\C-m" 'newline-and-indent)
-			 (set-default-coding-systems 'utf-8)
-;			 (setq ruby-deep-indent-paren-style t)
-			 ))
+	  '(lambda()
+	     (local-set-key "\C-m" 'newline-and-indent)
+	     (set-default-coding-systems 'utf-8)
+	     ;(setq ruby-deep-indent-paren-style t)
+	     ))
 
 ;;;c++自動改行とインデント設定
 (add-hook 'c++-mode-hook
           '(lambda ()
-             (c-set-style "linux")	;gnu, k&r, bsd, stroustrup, whitesmith, ellemtel, linux, cc-mode, python etc...
-			 (setq c-basic-offset 3) ;インデント幅
-			 (setq tab-width c-basic-offset)
-			 (setq indent-tabs-mode t) ;インデントはタブで
-			 ))
+	   ;gnu, k&r, bsd, stroustrup, whitesmith, ellemtel, linux, cc-mode, python etc...
+             (c-set-style "linux")
+	     (setq c-basic-offset 3) ;インデント幅
+	     (setq tab-width c-basic-offset)
+	     (setq indent-tabs-mode t) ;インデントはタブで
+	     ))
 
 ;;;c自動改行+インデント
 (add-hook 'c-mode-common-hook
-		  '(lambda ()
-		     (c-set-style "linux")
-		; センテンスの終了である ';' を入力したら、自動改行+インデント
-		     (setq c-basic-offset 4) ;インデント幅
-		     (setq tab-width c-basic-offset)
-		     (setq indent-tabs-mode t) ;インデントはタブで
-		; RET キーで自動改行+インデント
-		     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
-		     ))
+	  '(lambda ()
+	     (c-set-style "linux")
+	; センテンスの終了である ';' を入力したら、自動改行+インデント
+	     (setq c-basic-offset 4) ;インデント幅
+	     (setq tab-width c-basic-offset)
+	     (setq indent-tabs-mode t) ;インデントはタブで
+					; RET キーで自動改行+インデント
+	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
+	     ))

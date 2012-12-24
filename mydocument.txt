@@ -31,3 +31,9 @@ jlisting.styのおき場所（新たに置いたらmktexlsrしてls-Rデータ�
 ------Mount and unmount USB Flash Memory------
 mount_msdosfs /dev/da0s1 /mnt
 umount /mst
+
+------Install apt-cyg------
+//installation of apt-cyg is only copy apt-cyg file
+wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+chmod +x apt-cyg
+mv apt-cyg /usr/local/bin

@@ -1,0 +1,128 @@
+./print_a_frame.out 
+./print_a_frame.out 
+cat print_a_frame.c | putclip
+cd ../10014/
+ls
+./print_a_chessboard.out 
+cat print_a_chessboard.c | pugclip
+cat print_a_chessboard.c | putclip
+ls
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+s
+ls
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+ls
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+./finding_missing_cards.out 
+cat finding_missing_cards.c | putclip
+./grading.out 
+./grading.out 
+./grading.out 
+./grading.out 
+./g
+./grading.out 
+cat grading.c | putclip
+cd ../10017/
+ls
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+ls
+./how_many_ways.out 
+cat how_many_ways.c | putclip
+cat how_many_ways.c | putclip
+cat how_many_ways.out
+ls
+cat how_many_ways.c
+cat how_many_ways.c | putclip
+ls
+./toggling_cases.out 
+./toggling_cases.out.stackdump
+ls
+./toggling_cases.out
+fg
+fg
+./toggling_cases.out
+./toggling_cases.out.stackdump
+./toggling_cases.out
+./toggling_cases.out
+fg
+./toggling_cases.out
+./toggling_cases.out
+rm toggling_cases.out.stackdump
+./toggling_cases.out 
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.out | putclip
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+./toggling_cases.out 
+ls
+./toggling_cases.c | putclip
+ls
+./toggling_cases.c | putclip
+ls
+ls -a
+ls -al
+cat toggling_cases.out | putclip
+cat toggling_cases.c | putclip
+ls
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+cd ../10019
+ls
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+cat sum_of_numbers.c | putclip
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+ls
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+cat sum_of_numbers.c | putclip
+cd ../10020
+ls
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 

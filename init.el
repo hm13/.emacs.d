@@ -166,6 +166,6 @@
 		      	      (or (getenv "CC") "gcc") 
 		      	      (file-name-sans-extension file)
 		      	      (or (getenv "CPPFLAGS") "-DDEBUG=9")
-		      	      (or (getenv "CFLAGS") "-ansi -pedantic -Wall -g")
+		      	      (or (getenv "CFLAGS") "-Wall -g")
 			      file))))
 	     ))

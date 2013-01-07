@@ -1,34 +1,3 @@
-./print_a_frame.out 
-./print_a_frame.out 
-cat print_a_frame.c | putclip
-cd ../10014/
-ls
-./print_a_chessboard.out 
-cat print_a_chessboard.c | pugclip
-cat print_a_chessboard.c | putclip
-ls
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-s
-ls
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-ls
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-./finding_missing_cards.out 
-cat finding_missing_cards.c | putclip
-./grading.out 
-./grading.out 
-./grading.out 
-./grading.out 
-./g
 ./grading.out 
 cat grading.c | putclip
 cd ../10017/
@@ -126,3 +95,34 @@ ls
 ./finding_minumim_string.out 
 ./finding_minumim_string.out 
 ./finding_minumim_string.out 
+ex
+exit
+ls
+(+ 3 3)
+(cd ~)
+(dir ..)
+(dir "..")
+(dir '..)
+(cd "..")
+(PWD)
+(file-name-directory f)
+(file-name-directory ~)
+default-directory
+(default-directory)
+(file-exists-p .bashrc)
+(file-exists-p '.bashrc)
+(file-exists-p ".bashrc")
+(file-name-directory ".")
+(cd ".emacs.d")
+(file-name-directory ".")
+(pwd)
+echo $PWD
+(echo "A")
+(pwd)
+(echo (pwd))
+($PWD)
+('PWD)
+exit
+ex
+exit
+exit

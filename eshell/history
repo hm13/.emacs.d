@@ -1,0 +1,128 @@
+./grading.out 
+cat grading.c | putclip
+cd ../10017/
+ls
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+./how_many_ways.out 
+ls
+./how_many_ways.out 
+cat how_many_ways.c | putclip
+cat how_many_ways.c | putclip
+cat how_many_ways.out
+ls
+cat how_many_ways.c
+cat how_many_ways.c | putclip
+ls
+./toggling_cases.out 
+./toggling_cases.out.stackdump
+ls
+./toggling_cases.out
+fg
+fg
+./toggling_cases.out
+./toggling_cases.out.stackdump
+./toggling_cases.out
+./toggling_cases.out
+fg
+./toggling_cases.out
+./toggling_cases.out
+rm toggling_cases.out.stackdump
+./toggling_cases.out 
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.out | putclip
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+cat toggling_cases.c | putclip
+./toggling_cases.out 
+./toggling_cases.out 
+ls
+./toggling_cases.c | putclip
+ls
+./toggling_cases.c | putclip
+ls
+ls -a
+ls -al
+cat toggling_cases.out | putclip
+cat toggling_cases.c | putclip
+ls
+./toggling_cases.out 
+./toggling_cases.out 
+./toggling_cases.out 
+cd ../10019
+ls
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+cat sum_of_numbers.c | putclip
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+ls
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+./sum_of_numbers.out 
+cat sum_of_numbers.c | putclip
+cd ../10020
+ls
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+./counting_characters.out 
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out
+ls
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+./finding_minumim_string.out 
+ex
+exit
+ls
+(+ 3 3)
+(cd ~)
+(dir ..)
+(dir "..")
+(dir '..)
+(cd "..")
+(PWD)
+(file-name-directory f)
+(file-name-directory ~)
+default-directory
+(default-directory)
+(file-exists-p .bashrc)
+(file-exists-p '.bashrc)
+(file-exists-p ".bashrc")
+(file-name-directory ".")
+(cd ".emacs.d")
+(file-name-directory ".")
+(pwd)
+echo $PWD
+(echo "A")
+(pwd)
+(echo (pwd))
+($PWD)
+('PWD)
+exit
+ex
+exit
+exit

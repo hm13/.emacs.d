@@ -37,3 +37,6 @@ umount /mst
 wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
 chmod +x apt-cyg
 mv apt-cyg /usr/local/bin
+
+------About DEL direction-------
+http://www.nongnu.org/emacsdoc-fr/manuel/lossage.html

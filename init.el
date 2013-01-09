@@ -1,10 +1,63 @@
+
+
 ;;;Add load path
 (setq load-path
       (append
        (list
+	(expand-file-name "~/.emacs.d/")
 	(expand-file-name "~/.emacs.d/auto-install/")
+	(expand-file-name "~/.emacs.d/mode-file/")
 	)
        load-path))
+
+(require 'compile)
+
+(defvar yel-compile-auto-close t
+  "* If non-nil, a window is automatically closed after (\\[compile]).")
+
+(defadvice compile (after compile-aftercheck activate compile)
+  "Adds a funcion of windows auto-close."
+  (let ((proc (get-buffer-process "*compilation*")))
+    (if (and proc yel-compile-auto-close)
+	(set-process-sentinel proc 'yel-compile-teardown))))
+
+(defun yel-compile-teardown (proc status)
+  "Closes window automatically, if compile succeed."
+  (let ((ps (process-status proc)))
+    (if (eq ps 'exit)
+	(if (eq 0 (process-exit-status proc))
+	    (progn
+;;	      (delete-other-windows)
+	      (message "---- Compile Success ! Runnning...----")
+	      (switch-to-buffer-other-window "*compilation*")
+	      (kill-buffer "*compilation*")
+;;	      (eshell (cd (file-name-directory "finding_minumim_string.c")))
+	      (other-window)
+	      (defvar cur (file-name-directroy (buffer-file-name)))
+	      (other-window)
+	      (message 'cur)
+	      )
+	  (message "Compile Failer")))
+    (if (eq ps 'signal)
+	(message "Compile Abnormal end"))))
+
+;;;Use multi-term
+(require 'multi-term)
+(setq multi-term-program "/cygdrive/Cygwin/bin/bash")
+(setq multi-term-program shell-file-name)
+(add-to-list 'term-unbind-key-list '"M-x")
+(add-hook 'term-mode-hook
+	  '(lambda ()
+	     (define-key term-raw-map (kbd "C-t") 'other-window)
+	     (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
+	     ))
+  
+;;;c-modeの個人設定読み込み
+(require 'c-mode)
+
+;;;行番号表示
+(require 'wb-line-number)
+(wb-line-number-toggle)
 
 ;;;Config of open-junk-file.el
 (require 'open-junk-file)
@@ -34,7 +87,7 @@
 ;; (setq eldoc-idle-delay 0.2);Display immediately
 ;; (setq eldoc-minor-mode-string "");Don't show "ElDoc" in mode line
 
-;;Highlight counterpart of the parenthesis
+;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
 ;;Indent when start a new line
 (global-set-key "\C-m" 'newline-and-indent)
@@ -53,8 +106,6 @@
 ;;;Don't divide window when type C-x C-b
 (global-set-key [(C x) (C b)] 'buffer-menu)
 
-;;;C-c cでcompileコマンド
-(define-key global-map [(C c) (c)] 'compile)
 
 ;;;モードライン設定
 (line-number-mode t)
@@ -79,10 +130,17 @@
 		  ))
 
 ;;;オレオレEmacsドキュメントを開く
-(global-set-key "\M-d"
+(global-set-key (kbd "M-d")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/mydocument.txt")
+		  ))
+
+;;;init.elを開く
+(global-set-key (kbd "M-s")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init.el")
 		  ))
 
 ;;;カレントウィンドウの拡大（M-h:垂直方向 M-w:水平方向）
@@ -98,9 +156,6 @@
 ;;;Ctrl + t でウィンドウ移動
 (define-key global-map "\C-t" 'other-window)
 
-;;;行番号表示
-(load "~/.emacs.d/wb-line-number.el")
-(wb-line-number-toggle)
 
 ;;;スクロール行数を2行に
 (setq scroll-step 1)
@@ -129,7 +184,6 @@
 (set-face-foreground 'font-lock-comment-face "MediumSeaGreen")
 
 
-
 ;;;Ruby自動改行とインデント設定
 (add-hook 'ruby-mode-hook
 	  '(lambda()
@@ -148,24 +202,4 @@
 	     (setq indent-tabs-mode t) ;インデントはタブで
 	     ))
 
-;;;c自動改行+インデント
-(add-hook 'c-mode-common-hook
-	  '(lambda ()
-	     (c-set-style "linux")
-	     ;; センテンスの終了である ';' を入力したら、自動改行+インデント
-	     (setq c-basic-offset 4) ;インデント幅
-	     (setq tab-width c-basic-offset)
-	     (setq indent-tabs-mode t) ;インデントはタブで
-	     ;; RET キーで自動改行+インデント
-	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
-	     (unless (file-exists-p "Makefile")
-	       (set (make-local-variable 'compile-command)
-		    ;; $(CC) -c -o $@ $(CPPFLAGS) $(CFLAGS) $<
-		    (let ((file (file-name-nondirectory buffer-file-name)))
-                      (format "%s -o %s.out %s %s %s"; (format "%s -c -o %s.o %s %s %s" ;;default
-		      	      (or (getenv "CC") "gcc") 
-		      	      (file-name-sans-extension file)
-		      	      (or (getenv "CPPFLAGS") "-DDEBUG=9")
-		      	      (or (getenv "CFLAGS") "-ansi -pedantic -Wall -g")
-			      file))))
-	     ))
+

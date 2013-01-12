@@ -1,4 +1,10 @@
-
+;;;Rebinding Eshell histroy
+(add-hook 'eshell-mode-hook
+	  '(lambda ()
+	     (local-set-key (kbd "C-p") 'eshell-previous-matching-input-from-input )
+	     (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input )
+	     )
+	  )
 
 ;;;Add load path
 (setq load-path
@@ -6,7 +12,7 @@
        (list
 	(expand-file-name "~/.emacs.d/")
 	(expand-file-name "~/.emacs.d/auto-install/")
-	(expand-file-name "~/.emacs.d/mode-file/")
+	(expand-file-name "~/.emacs.d/hook-file/")
 	)
        load-path))
 
@@ -30,12 +36,10 @@
 ;;	      (delete-other-windows)
 	      (message "---- Compile Success ! Runnning...----")
 	      (switch-to-buffer-other-window "*compilation*")
-	      (kill-buffer "*compilation*")
-;;	      (eshell (cd (file-name-directory "finding_minumim_string.c")))
-	      (other-window)
-	      (defvar cur (file-name-directroy (buffer-file-name)))
-	      (other-window)
-	      (message 'cur)
+;;	      (kill-buffer "*compilation*")
+	      (eshell)
+;	      (eshell/cd "~/AOJ/100/10021")
+	      (eshell-send-input)
 	      )
 	  (message "Compile Failer")))
     (if (eq ps 'signal)
@@ -52,8 +56,11 @@
 	     (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
 	     ))
   
-;;;c-modeの個人設定読み込み
-(require 'c-mode)
+;;;c-hookの個人設定読み込み
+(require 'c-hook)
+
+;;;c++-hookの個人設定読み込み
+(require 'c++-hook)
 
 ;;;行番号表示
 (require 'wb-line-number)

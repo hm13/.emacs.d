@@ -1,102 +1,3 @@
-./grading.out 
-cat grading.c | putclip
-cd ../10017/
-ls
-./how_many_ways.out 
-./how_many_ways.out 
-./how_many_ways.out 
-./how_many_ways.out 
-./how_many_ways.out 
-ls
-./how_many_ways.out 
-cat how_many_ways.c | putclip
-cat how_many_ways.c | putclip
-cat how_many_ways.out
-ls
-cat how_many_ways.c
-cat how_many_ways.c | putclip
-ls
-./toggling_cases.out 
-./toggling_cases.out.stackdump
-ls
-./toggling_cases.out
-fg
-fg
-./toggling_cases.out
-./toggling_cases.out.stackdump
-./toggling_cases.out
-./toggling_cases.out
-fg
-./toggling_cases.out
-./toggling_cases.out
-rm toggling_cases.out.stackdump
-./toggling_cases.out 
-./toggling_cases.out 
-cat toggling_cases.c | putclip
-./toggling_cases.out 
-./toggling_cases.out 
-./toggling_cases.out 
-./toggling_cases.out 
-cat toggling_cases.c | putclip
-cat toggling_cases.c | putclip
-./toggling_cases.out 
-cat toggling_cases.out | putclip
-cat toggling_cases.c | putclip
-./toggling_cases.out 
-cat toggling_cases.c | putclip
-./toggling_cases.out 
-cat toggling_cases.c | putclip
-./toggling_cases.out 
-./toggling_cases.out 
-ls
-./toggling_cases.c | putclip
-ls
-./toggling_cases.c | putclip
-ls
-ls -a
-ls -al
-cat toggling_cases.out | putclip
-cat toggling_cases.c | putclip
-ls
-./toggling_cases.out 
-./toggling_cases.out 
-./toggling_cases.out 
-cd ../10019
-ls
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-cat sum_of_numbers.c | putclip
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-ls
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-./sum_of_numbers.out 
-cat sum_of_numbers.c | putclip
-cd ../10020
-ls
-./counting_characters.out 
-./counting_characters.out 
-./counting_characters.out 
-./counting_characters.out 
-./counting_characters.out 
-./counting_characters.out 
-ls
-./finding_minumim_string.out 
-./finding_minumim_string.out 
-ls
-./finding_minumim_string.out 
-./finding_minumim_string.out
-ls
-./finding_minumim_string.out 
-./finding_minumim_string.out 
-./finding_minumim_string.out 
-./finding_minumim_string.out 
-./finding_minumim_string.out 
-ex
-exit
 ls
 (+ 3 3)
 (cd ~)
@@ -126,3 +27,102 @@ exit
 ex
 exit
 exit
+ls
+ls
+usbh
+cd /cygdrive/j/
+ls
+cd TechEnglish/
+cd ..
+cd 
+cd AOJ/
+cd 100/
+ls
+cd 10021
+ls
+./finding_minumim_string.out 
+ls
+cls
+ls
+cls
+ls
+alias
+ls
+fg
+fg
+ls
+ls
+ls
+cd 10021/
+ls
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+ls
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+cl
+cls
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+ex
+exit
+ls
+ls
+ls
+ls
+ls
+(eshell-previous-matching-input-from-input 1)
+(eshell-previous-matching-input-from-input 1)
+(eshell-previous-matching-input-from-input 2)
+(eshell-previous-matching-input-from-input 30)
+ls
+ls
+ls
+exit
+ls
+ls
+ls
+dir
+cd ..
+cd 10021/
+ls
+exit
+ls
+exit
+ls
+./finding_minumim_string.out
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+./finding_minimum_string.out 
+cat finding_minimum_string.c | cutclip
+cat finding_minimum_string.c | putclip
+ls
+ls
+ls
+./finding_minimum_string.out 
+ls
+ls
+./foreach.out 
+./foreach.out 
+./foreach.out 
+./foreach.out 
+./foreach.out 
+./foreach.out 

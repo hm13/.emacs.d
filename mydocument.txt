@@ -1,8 +1,19 @@
 //
-// 覚書き
+// 覚書き(Memo)
 //
 
-------評価-------
+------Install From Source-------
+tar zxvf filename.tar.gz
+cd filename
+./configure
+make
+make install
+
+------Unpack-------
+tar xzvf filename.tar.gz
+tar jxf filename.tar.bz2
+
+------Emacs(evalutation)-------
 C-x C-e  ポイント直前の式を評価
 M-x eval-region
 M-x eval-current-buffer
@@ -40,3 +51,11 @@ mv apt-cyg /usr/local/bin
 
 ------About DEL direction-------
 http://www.nongnu.org/emacsdoc-fr/manuel/lossage.html
+
+------glut & opengl-------
+install package "opengl" using apt-cyg
+write #include <GL/glut.h>
+g++ -I/usr/include/opengl -o souzou.out  -Wall -g souzou.cpp -lglut32 -lGLU32 -lOpenGL32
+
+------Check New Line Character------
+od -c filename

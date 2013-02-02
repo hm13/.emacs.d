@@ -1,128 +1,128 @@
 ls
-(+ 3 3)
-(cd ~)
-(dir ..)
-(dir "..")
-(dir '..)
-(cd "..")
-(PWD)
-(file-name-directory f)
-(file-name-directory ~)
-default-directory
-(default-directory)
-(file-exists-p .bashrc)
-(file-exists-p '.bashrc)
-(file-exists-p ".bashrc")
-(file-name-directory ".")
-(cd ".emacs.d")
-(file-name-directory ".")
-(pwd)
-echo $PWD
-(echo "A")
-(pwd)
-(echo (pwd))
-($PWD)
-('PWD)
-exit
-ex
-exit
-exit
+e no1.out.core
+less no1.out.core
+limit
+./no1.out 
+ls
+./no1.out 
+ls
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+q
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+q
+q
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./souzou.out 
+./souzou.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+cls
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+cls
+cls
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+./no1.out 
+xls
+cls
+cls
+./no1.out 
+./no1.out 
 ls
 ls
-usbh
-cd /cygdrive/j/
+./no1.out 
+./no1.out 
+./no1.out 
+./main.out
 ls
-cd TechEnglish/
-cd ..
-cd 
-cd AOJ/
-cd 100/
-ls
-cd 10021
-ls
-./finding_minumim_string.out 
+rm a.exe 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
 ls
 cls
 ls
 cls
 ls
-alias
+0
+./main.out
 ls
-fg
-fg
-ls
-ls
-ls
-cd 10021/
-ls
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-ls
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-cl
-cls
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-ex
-exit
-ls
-ls
-ls
-ls
-ls
-(eshell-previous-matching-input-from-input 1)
-(eshell-previous-matching-input-from-input 1)
-(eshell-previous-matching-input-from-input 2)
-(eshell-previous-matching-input-from-input 30)
-ls
-ls
-ls
-exit
-ls
-ls
-ls
-dir
-cd ..
-cd 10021/
-ls
-exit
-ls
-exit
-ls
-./finding_minumim_string.out
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-./finding_minimum_string.out 
-cat finding_minimum_string.c | cutclip
-cat finding_minimum_string.c | putclip
-ls
-ls
-ls
-./finding_minimum_string.out 
-ls
-ls
-./foreach.out 
-./foreach.out 
-./foreach.out 
-./foreach.out 
-./foreach.out 
-./foreach.out 
+ls
+./main.out 

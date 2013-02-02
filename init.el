@@ -1,60 +1,15 @@
-;;;Rebinding Eshell histroy
-(add-hook 'eshell-mode-hook
-	  '(lambda ()
-	     (local-set-key (kbd "C-p") 'eshell-previous-matching-input-from-input )
-	     (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input )
-	     )
-	  )
+;;;open .h file in c++mode
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++mode))
 
-;;;Add load path
 (setq load-path
       (append
        (list
 	(expand-file-name "~/.emacs.d/")
-	(expand-file-name "~/.emacs.d/auto-install/")
-	(expand-file-name "~/.emacs.d/hook-file/")
+	(expand-file-name "~/.emacs.d/auto-install")
+	(expand-file-name "~/.emacs.d/hook-file")
 	)
        load-path))
 
-(require 'compile)
-
-(defvar yel-compile-auto-close t
-  "* If non-nil, a window is automatically closed after (\\[compile]).")
-
-(defadvice compile (after compile-aftercheck activate compile)
-  "Adds a funcion of windows auto-close."
-  (let ((proc (get-buffer-process "*compilation*")))
-    (if (and proc yel-compile-auto-close)
-	(set-process-sentinel proc 'yel-compile-teardown))))
-
-(defun yel-compile-teardown (proc status)
-  "Closes window automatically, if compile succeed."
-  (let ((ps (process-status proc)))
-    (if (eq ps 'exit)
-	(if (eq 0 (process-exit-status proc))
-	    (progn
-;;	      (delete-other-windows)
-	      (message "---- Compile Success ! Runnning...----")
-	      (switch-to-buffer-other-window "*compilation*")
-;;	      (kill-buffer "*compilation*")
-	      (eshell)
-;	      (eshell/cd "~/AOJ/100/10021")
-	      (eshell-send-input)
-	      )
-	  (message "Compile Failer")))
-    (if (eq ps 'signal)
-	(message "Compile Abnormal end"))))
-
-;;;Use multi-term
-(require 'multi-term)
-(setq multi-term-program "/cygdrive/Cygwin/bin/bash")
-(setq multi-term-program shell-file-name)
-(add-to-list 'term-unbind-key-list '"M-x")
-(add-hook 'term-mode-hook
-	  '(lambda ()
-	     (define-key term-raw-map (kbd "C-t") 'other-window)
-	     (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
-	     ))
   
 ;;;c-hookÇÃå¬êlê›íËì«Ç›çûÇ›
 (require 'c-hook)
@@ -63,8 +18,10 @@
 (require 'c++-hook)
 
 ;;;çsî‘çÜï\é¶
-(require 'wb-line-number)
-(wb-line-number-toggle)
+;(require 'wb-line-number)
+;(wb-line-number-toggle)
+(global-linum-mode t)
+(setq linum-format "%3d|")
 
 ;;;Config of open-junk-file.el
 (require 'open-junk-file)

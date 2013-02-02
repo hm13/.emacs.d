@@ -1,3 +1,39 @@
+;;;Rebinding Eshell History
+(add-hook 'eshell-mode-hook
+	  '(lambda ()
+	     (local-set-key (kbd "C-p") 'eshell-previous-matching-input-from-input)
+	     (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input)
+	     )
+	  )
+
+(require 'compile)
+
+(defvar yel-compile-auto-close t
+  "* If non-nil, a window is automatically closed after (\\[compile]).")
+
+(defadvice compile (after compile-aftercheck activate compile)
+  "Adds a function of windows auto-close."
+  (let ((proc (get-buffer-process "*compilation*")))
+    (if (and proc yel-compile-auto-close)
+	(set-process-sentinel proc 'yel-compile-teardown))))
+
+(defun yel-compile-teardown (proc status)
+  "Closes window automatically, if compile succeed."
+  (let ((ps (process-status proc)))
+    (if (eq ps 'exit)
+    	(if (eq 0 (process-exit-status proc))
+    	    (progn
+    	      ;;(delete-other-window)
+    	      (message "----Compile Success! Running...----")
+    	      (switch-to-buffer-other-window "*compilation*")
+    	      ;;(kill-buffer "*compilation*)
+    	      (eshell)
+    	      (eshell-send-input)
+    	      )
+    	  (message "Compile Failer")))
+    (if (eq ps 'signal)
+	(message "Compile Abnormal and"))))
+
 ;;;open .h file in c++mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++mode))
 

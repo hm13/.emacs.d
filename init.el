@@ -63,8 +63,8 @@
 (require 'c++-hook)
 
 ;;;s”Ô†•\¦
-(require 'wb-line-number)
-(wb-line-number-toggle)
+(global-linum-mode t)
+(setq linum-format "%3d|")
 
 ;;;Config of open-junk-file.el
 (require 'open-junk-file)

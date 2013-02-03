@@ -1,3 +1,19 @@
+;;;Load Path Config
+(setq load-path
+      (append
+       (list
+	(expand-file-name "~/.emacs.d/")
+	(expand-file-name "~/.emacs.d/auto-install")
+	(expand-file-name "~/.emacs.d/hook-file")
+	)
+       load-path))
+
+
+;;;個人設定hook読み込み
+(require 'c-hook)
+(require 'c++-hook)
+
+
 ;;;Rebinding Eshell History
 (add-hook 'eshell-mode-hook
 	  '(lambda ()
@@ -6,8 +22,8 @@
 	     )
 	  )
 
+;;;Run eshell automatically after compile
 (require 'compile)
-
 (defvar yel-compile-auto-close t
   "* If non-nil, a window is automatically closed after (\\[compile]).")
 
@@ -34,24 +50,9 @@
     (if (eq ps 'signal)
 	(message "Compile Abnormal and"))))
 
+
 ;;;open .h file in c++mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++mode))
-
-(setq load-path
-      (append
-       (list
-	(expand-file-name "~/.emacs.d/")
-	(expand-file-name "~/.emacs.d/auto-install")
-	(expand-file-name "~/.emacs.d/hook-file")
-	)
-       load-path))
-
-  
-;;;c-hookの個人設定読み込み
-(require 'c-hook)
-
-;;;c++-hookの個人設定読み込み
-(require 'c++-hook)
 
 ;;;行番号表示
 (global-linum-mode t)
@@ -105,10 +106,6 @@
 (global-set-key [(C x) (C b)] 'buffer-menu)
 
 
-;;;モードライン設定
-(line-number-mode t)
-(column-number-mode t)
-
 ;;;右端で折り返す
 (setq turncate-lines t)
 
@@ -127,7 +124,7 @@
 		  (forward-line SC_LINE_NUM)
 		  ))
 
-;;;オレオレEmacsドキュメントを開く
+;;;mydocument.txtを開く
 (global-set-key (kbd "M-d")
 		(lambda ()
 		  (interactive)
@@ -153,7 +150,6 @@
 
 ;;;Ctrl + t でウィンドウ移動
 (define-key global-map "\C-t" 'other-window)
-
 
 ;;;スクロール行数を2行に
 (setq scroll-step 1)

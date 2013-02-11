@@ -1,8 +1,10 @@
 ;;;c自動改行+インデント
 (add-hook 'c-mode-hook
 	  '(lambda ()
+	     (hs-minor-mode 1)
+	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
 	     (c-set-style "linux")
-	     (setq c-basic-offset 4) ;インデント幅
+	     (setq c-basic-offset 3) ;インデント幅
 	     (setq tab-width c-basic-offset)
 	     (setq indent-tabs-mode t) ;インデントはタブで
 	     ;; RET キーで自動改行+インデント

@@ -4,7 +4,9 @@
 ;	     (c++-set-style "linux")
 ;	     (setq c++-basic-offset 4) ;インデント幅
 ;	     (setq tab-width c++-basic-offset)
-	     (setq indent-tabs-mode t) ;インデントはタブで
+	     (hs-minor-mode 1)
+	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
+	     (define-key c-mode-base-map [(C x) (t)] 'indent-for-tab-command)
 	     ;; RET キーで自動改行+インデント
 	     (define-key c++-mode-map "\C-m" 'newline-and-indent)
 	     ;; C-c cでコンパイルコマンド

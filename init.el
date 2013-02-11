@@ -5,6 +5,7 @@
 	(expand-file-name "~/.emacs.d/")
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
+	(expand-file-name "~/.emacs.d/elpa/org-20130204")
 	)
        load-path))
 
@@ -12,6 +13,7 @@
 ;;;個人設定hook読み込み
 (require 'c-hook)
 (require 'c++-hook)
+(require 'org-hook)
 
 
 ;;;Rebinding Eshell History
@@ -21,6 +23,7 @@
 	     (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input)
 	     )
 	  )
+
 
 ;;;Run eshell automatically after compile
 (require 'compile)
@@ -177,7 +180,6 @@
 ;;;コメントの色を変更
 (set-face-foreground 'font-lock-comment-face "MediumSeaGreen")
 
-
 ;;;Ruby自動改行とインデント設定
 (add-hook 'ruby-mode-hook
 	  '(lambda()
@@ -195,5 +197,3 @@
 	     (setq tab-width c-basic-offset)
 	     (setq indent-tabs-mode t) ;インデントはタブで
 	     ))
-
-

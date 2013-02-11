@@ -1,6 +1,8 @@
 ;;;c自動改行+インデント
 (add-hook 'c-mode-hook
 	  '(lambda ()
+	     (hs-minor-mode 1)
+	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
 	     (c-set-style "linux")
 	     (setq c-basic-offset 4) ;インデント幅
 	     (setq tab-width c-basic-offset)
@@ -8,7 +10,7 @@
 	     ;; RET キーで自動改行+インデント
 	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
 	     ;; C-c cでコンパイルコマンド
-	     (define-key global-map [(C c) (c)] 'compile)
+	     (define-key c-mode-base-map [(C c) (c)] 'compile)
 	     ;;Makefileがなかった時のコンパイルコマンド
 	     (unless (file-exists-p "Makefile")
 	       (set (make-local-variable 'compile-command)

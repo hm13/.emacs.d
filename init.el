@@ -15,6 +15,7 @@
 (require 'c++-hook)
 (require 'org-hook)
 
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;;;Rebinding Eshell History
 (add-hook 'eshell-mode-hook

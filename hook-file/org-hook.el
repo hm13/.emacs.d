@@ -12,6 +12,7 @@
 	       "\\documentclass{jarticle}
 \\usepackage[dvipdfmx]{hyperref}
 \\usepackage[dvipdfm]{graphicx}
+\\usepackage{listings,jlisting}
 [NO-DEFAULT-PACKAGES]
 [NO-PACKAGES]
 "

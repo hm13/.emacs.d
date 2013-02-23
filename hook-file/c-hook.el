@@ -3,6 +3,7 @@
 	  '(lambda ()
 	     (hs-minor-mode 1)
 	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
+	     (define-key c-mode-base-map [(C x) (t)] 'indent-for-tab-command)
 	     (c-set-style "linux")
 	     (setq c-basic-offset 3) ;インデント幅
 	     (setq tab-width c-basic-offset)

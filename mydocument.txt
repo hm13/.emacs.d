@@ -1,6 +1,13 @@
 //
-// 覚書き(Memo)
+// Memo
 //
+
+------Show Color List-------
+M-x list-colors-display
+
+------Try color theme-------
+M-x load-library color-theme
+M-x color-theme-select
 
 ------Install From Source-------
 tar zxvf filename.tar.gz

@@ -7,4 +7,5 @@ char* syobobo(int n_syobo){
 	for( i=0; i<n_syobo; i++ )
 		strcat( syobo, "(´・ω・`)" );
 	return syobo;
+
 }

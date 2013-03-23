@@ -1,128 +1,128 @@
-../Sort/sort.out -s
-../Sort/sort.out -s
-../Sort/sort.out -s
-s
+0
 ls
-rm sort.out.core 
-cd ../s
-cd ../Sort/
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
 ls
-./sort.out 
-./sort.out 
-./sort.out -s
-cd ../RandNum/
+cat factorial.c | putclip
 ls
-./rand_num.out 200000
-../Sort/sort.out 
-../Sort/sort.out 
-../Sort/sort.out 
-../Sort/sort.out 
-../Sort/sort.out 
-../Sort/sort.out -s
-s
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
 ls
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-./rand_num.out 300000
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-./rand_num.out 3000000
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-./rand_num.out 300000
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-../Sort/sort.out
-lsWelcome to the Emacs shell
+cat factorial.c | putclip
+cd ..
+mkdir 0021
+rm -r 0021
+mkdir 0020
+cd 0021
 ls
-./sort.out 
+cd 0021
+cd 0020
 ls
-exit
+./capitalize.out 
+./capitalize.out 
+./capitalize.out 
+./capitalize.out 
 ls
-./sort.out 
-./sort.out 
-./sort.out 
-./sort.out 
-ls
-./sort.out -s
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
-./sort.out
+cat capitalize.c | putclip
+ksdfjsadkfjIJIJIJJJJFeijfwejf.
 ls
 ./test.out 
-ls
-ls
-./BinaryCode.out
-ls -al
-chmod u+x BinaryCode.out
-ls -al
-chmod u+rwx BinaryCode.out
-ls -al
-chmod u+rwx BinaryCode.out
-ls
 cls
 ls
+cd ..
+ls
+cd
+cd Codeforces/CR\#175Div2/
+ls
+./a.out
+cd ..
+ls
+mv CR\#175Div2/ CR175Div2
+ls
+cd CR175Div2/
+ls
+./a.out 
+ls
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+ls
+./b.out 
+ls
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+2
+./parallelism.out 
 ls
 ls
-./BinaryCode.out 
+./parallelism.out 
+cat parallelism.c | putclip
+cat parallelism.c | putclip
 ls
-./BinaryCode.out 
+./parallelism.out 
+cat parallelism.c | putclip
+./parallelism.out 
+ls
+cat parallelism.out
+cat parallelism.c
+cat parallelism.c | putclip
+ls
+./parallelism.out 
+ls
+cat parallelism.c | putclip
+cls
+sl
+ls
+./parallelism.out 
+ls
+cat parallelism.c | putclip
+ls
+./parallelism.out 
+ls
+./parallelism.out 
+ls
+cat parallelism.c | putclip
+ls
+cat parallelism.c | putclip
+ls
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+ls
+./factorial.out 
+ls
+cat factorial.c | putclip
+ls
+./factorial.out 
+./factorial.out 
+./factorial.out 
+./factorial.out 
+ls
+cat factorial.c | putclip
+ls
+./factorial.out
+./factorial.out

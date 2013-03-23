@@ -3,7 +3,15 @@
 (set-face-foreground 'org-link "royal blue")
 (set-face-foreground 'org-document-info "sea green")
 
-(setq turncate-lines t)
+
+;;;Toggle right side turncation
+(setq org-startup-truncated nil)
+(defun change-truncation()
+  (interactive)
+  (cond ((eq truncate-lines nil)
+	 (setq truncate-lines t))
+	(t
+	 (setq truncate-lines nil))))
 
 (unless (boundp 'org-export-latex-classes)
     (setq org-export-latex-classes nil))

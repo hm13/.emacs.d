@@ -6,8 +6,10 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
+	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
 	)
        load-path))
+
 
 
 ;;;個人設定hook読み込み
@@ -15,7 +17,25 @@
 (require 'c++-hook)
 (require 'org-hook)
 
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;;;Color Config
+;;Mode Line
+(set-face-background 'modeline "black")
+(set-face-foreground 'modeline "color-119")
+(set-face-background 'mode-line-inactive "black")
+(set-face-foreground 'mode-line-inactive "gray70")
+;;Mini Buffer
+(set-face-foreground 'minibuffer-prompt "gray70") ;M-x
+;;Source
+(set-face-foreground 'font-lock-comment-face "cyan")
+(set-face-foreground 'font-lock-string-face  "color-203")
+(set-face-foreground 'font-lock-keyword-face "color-43")
+(set-face-foreground 'font-lock-function-name-face "brightblue")
+(set-face-foreground 'font-lock-variable-name-face "brightyellow")
+(set-face-foreground 'font-lock-type-face "brightgreen")
+(set-face-foreground 'font-lock-builtin-face "color-27")
+(set-face-foreground 'font-lock-constant-face "magenta")
+(set-face-foreground 'font-lock-warning-face "red")
 
 ;;;Rebinding Eshell History
 (add-hook 'eshell-mode-hook
@@ -44,23 +64,23 @@
     	(if (eq 0 (process-exit-status proc))
     	    (progn
     	      ;;(delete-other-window)
-    	      (message "----Compile Success! Running...----")
+    	      (message "Compile Success! Running on eshell...")
     	      (switch-to-buffer-other-window "*compilation*")
     	      ;;(kill-buffer "*compilation*)
     	      (eshell)
     	      (eshell-send-input)
     	      )
-    	  (message "Compile Failer")))
+    	  (message "Compile Failure")))
     (if (eq ps 'signal)
 	(message "Compile Abnormal and"))))
 
 
 ;;;open .h file in c++mode
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;;;行番号表示
 (global-linum-mode t)
-(setq linum-format "%3d|")
+(setq linum-format "%3d\u2502")
 
 ;;;Config of open-junk-file.el
 (require 'open-junk-file)
@@ -71,24 +91,6 @@
 (require 'lispxmp)
 ;;Write note by typing C-x C-d under the emacs-lisp-mode
 (define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
-
-;; ;;;Config of paredit.el
-;; (require 'paredit)
-;; (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
-;; (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
-;; (add-hook 'lisp-mode-hook 'enable-paredit-mode)
-;; (add-hook 'ielm-mode-hook 'enable-paredit-mode)
-
-;; ;;;Config of auto-async-byte-compile.el
-;; (require 'auto-async-byte-compile)
-;; ;;Regex of file which will be disabled this elisp
-;; (setq auto-async-byte-compile-exclude-files-regexp "/junk/")
-;; (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
-;; (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
-;; (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
-;; (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
-;; (setq eldoc-idle-delay 0.2);Display immediately
-;; (setq eldoc-minor-mode-string "");Don't show "ElDoc" in mode line
 
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
@@ -152,20 +154,24 @@
   (let ((inhibit-read-only t))
     (erase-buffer)))
 
-;;;Ctrl + t でウィンドウ移動
-(define-key global-map "\C-t" 'other-window)
+;;;Change window
+(defun other-window-or-split ()
+    (interactive)
+      (when (one-window-p)
+	    (split-window-vertically))
+        (other-window 1))
+(define-key global-map "\C-t" 'other-window-or-split)
 
-;;;スクロール行数を2行に
+;;;スクロール行数を1行に
 (setq scroll-step 1)
 
 ;;;スタートページを表示しない
 (setq inhibit-startup-message t)
 
 ;;;ビープ音をフラッシュにする
-(setq visible-bell t)
+(setq visible-bell nil)
 
 ;;; メニューバーを非表示
-; M-x menu-bar-mode で表示非表示を切り替えられる
 (menu-bar-mode 0)
 
 ;;;バックアップファイルを作らない
@@ -174,27 +180,11 @@
 ;;;C-hをバックスペースにする
 (global-set-key "\C-h" 'delete-backward-char)
 
-;;ミニバッファの色を変更
-(set-face-foreground 'minibuffer-prompt "white")
-(set-face-background 'minibuffer-prompt "black")
-
-;;;コメントの色を変更
-(set-face-foreground 'font-lock-comment-face "MediumSeaGreen")
-
 ;;;Ruby自動改行とインデント設定
 (add-hook 'ruby-mode-hook
 	  '(lambda()
 	     (local-set-key "\C-m" 'newline-and-indent)
 	     (set-default-coding-systems 'utf-8)
-	     ;(setq ruby-deep-indent-paren-style t)
 	     ))
 
-;;;c++自動改行とインデント設定
-(add-hook 'c++-mode-hook
-          '(lambda ()
-	   ;gnu, k&r, bsd, stroustrup, whitesmith, ellemtel, linux, cc-mode, python etc...
-             (c-set-style "linux")
-	     (setq c-basic-offset 3) ;インデント幅
-	     (setq tab-width c-basic-offset)
-	     (setq indent-tabs-mode t) ;インデントはタブで
-	     ))
+

@@ -1,47 +1,3 @@
-0
-ls
-./factorial.out 
-./factorial.out 
-./factorial.out 
-./factorial.out 
-./factorial.out 
-ls
-cat factorial.c | putclip
-ls
-./factorial.out 
-./factorial.out 
-./factorial.out 
-./factorial.out 
-./factorial.out 
-ls
-cat factorial.c | putclip
-cd ..
-mkdir 0021
-rm -r 0021
-mkdir 0020
-cd 0021
-ls
-cd 0021
-cd 0020
-ls
-./capitalize.out 
-./capitalize.out 
-./capitalize.out 
-./capitalize.out 
-ls
-cat capitalize.c | putclip
-ksdfjsadkfjIJIJIJJJJFeijfwejf.
-ls
-./test.out 
-cls
-ls
-cd ..
-ls
-cd
-cd Codeforces/CR\#175Div2/
-ls
-./a.out
-cd ..
 ls
 mv CR\#175Div2/ CR175Div2
 ls
@@ -126,3 +82,47 @@ cat factorial.c | putclip
 ls
 ./factorial.out
 ./factorial.out
+ls
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out | less
+cls
+cls
+ls
+./calc_exp_of_2.exe 
+fg
+./calc_exp_of_2.exe 
+cls
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+./calc_exp_of_2.exe 
+cls
+cls
+./calc_exp_of_2.exe 
+cls
+ls
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+ls
+cat a.c | putclip
+./test.out 
+ls
+rm test.out test.c 
+ls
+./test.out 
+rm test*
+exit

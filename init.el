@@ -6,16 +6,17 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
-	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
+;	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
 	)
        load-path))
 
 
 
 ;;;å¬êlê›íËhookì«Ç›çûÇ›
-(require 'c-hook)
-(require 'c++-hook)
-(require 'org-hook)
+;(require 'c-hook)
+;(require 'c++-hook)
+;(require 'org-hook)
+(require 'asm-hook)
 
 
 ;;;Color Config
@@ -98,14 +99,6 @@
 (global-set-key "\C-m" 'newline-and-indent)
 ;;Assign find-function
 (find-function-setup-keys)
-
-
-;; ;;;Config of auto-install.el
-;; (add-to-list 'load-path "~/.emacs.d/auto-install/")
-;; (require 'auto-install)
-;; (auto-install-update-emacswiki-package-name t)
-;; (auto-install-compatibility-setup)
-;; (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
 
 ;;;Don't divide window when type C-x C-b

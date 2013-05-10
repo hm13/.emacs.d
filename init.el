@@ -82,11 +82,6 @@
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
 
-;;;Config of open-junk-file.el
-(require 'open-junk-file)
-;;Open junk file by typing C-x C-z
-(global-set-key (kbd "C-x C-z") 'open-junk-file)
-
 ;;;Config of lispxmp.el
 (require 'lispxmp)
 ;;Write note by typing C-x C-d under the emacs-lisp-mode
@@ -98,14 +93,6 @@
 (global-set-key "\C-m" 'newline-and-indent)
 ;;Assign find-function
 (find-function-setup-keys)
-
-
-;; ;;;Config of auto-install.el
-;; (add-to-list 'load-path "~/.emacs.d/auto-install/")
-;; (require 'auto-install)
-;; (auto-install-update-emacswiki-package-name t)
-;; (auto-install-compatibility-setup)
-;; (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
 
 ;;;Don't divide window when type C-x C-b

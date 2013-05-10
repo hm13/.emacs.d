@@ -6,16 +6,17 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
-	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
+;	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
 	)
        load-path))
 
 
 
 ;;;å¬êlê›íËhookì«Ç›çûÇ›
-(require 'c-hook)
-(require 'c++-hook)
-(require 'org-hook)
+;(require 'c-hook)
+;(require 'c++-hook)
+;(require 'org-hook)
+(require 'asm-hook)
 
 
 ;;;Color Config

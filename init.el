@@ -83,11 +83,6 @@
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
 
-;;;Config of open-junk-file.el
-(require 'open-junk-file)
-;;Open junk file by typing C-x C-z
-(global-set-key (kbd "C-x C-z") 'open-junk-file)
-
 ;;;Config of lispxmp.el
 (require 'lispxmp)
 ;;Write note by typing C-x C-d under the emacs-lisp-mode

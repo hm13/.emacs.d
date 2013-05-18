@@ -1,6 +1,6 @@
 ;;;
 (add-hook 'asm-mode-hook
 	  '(lambda ()
-	     (define-key asm-mode "\C-m" 'newline)
+	     (local-set-key "\C-m" 'newline)
 	     ))
 (provide 'asm-hook)

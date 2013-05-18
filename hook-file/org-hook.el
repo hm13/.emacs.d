@@ -1,3 +1,6 @@
+;;;Enable color(only editting)
+(setq org-src-fontify-natively t)
+
 ;;;Org-mode config
 (require 'org)
 (set-face-foreground 'org-link "royal blue")

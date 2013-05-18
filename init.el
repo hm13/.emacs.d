@@ -11,9 +11,8 @@
        load-path))
 
 
-
 ;;;ŒÂlİ’èhook“Ç‚İ‚İ
-;(require 'c-hook)
+(require 'c-hook)
 ;(require 'c++-hook)
 ;(require 'org-hook)
 (require 'asm-hook)

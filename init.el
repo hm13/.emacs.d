@@ -20,8 +20,6 @@
 
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'modeline "black")
-(set-face-foreground 'modeline "color-119")
 (set-face-background 'mode-line-inactive "black")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer

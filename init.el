@@ -13,8 +13,8 @@
 
 ;;;å¬êlê›íËhookì«Ç›çûÇ›
 (require 'c-hook)
-;(require 'c++-hook)
-;(require 'org-hook)
+(require 'c++-hook)
+(require 'org-hook)
 (require 'asm-hook)
 
 
@@ -74,7 +74,7 @@
 
 
 ;;;open .h file in c++mode
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
 ;;;çsî‘çÜï\é¶
 (global-linum-mode t)
@@ -82,7 +82,7 @@
 
 ;;;Config of lispxmp.el
 (require 'lispxmp)
-;;Write note by typing C-x C-d under the emacs-lisp-mode
+;;Write note by typing C-x C-c under the emacs-lisp-mode
 (define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
 
 ;;Highlight the counterpart of the parenthesis

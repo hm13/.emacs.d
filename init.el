@@ -20,8 +20,6 @@
 
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'modeline "black")
-(set-face-foreground 'modeline "color-119")
 (set-face-background 'mode-line-inactive "black")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
@@ -76,7 +74,7 @@
 
 
 ;;;open .h file in c++mode
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
 ;;;çsî‘çÜï\é¶
 (global-linum-mode t)
@@ -84,7 +82,7 @@
 
 ;;;Config of lispxmp.el
 (require 'lispxmp)
-;;Write note by typing C-x C-d under the emacs-lisp-mode
+;;Write note by typing C-x C-c under the emacs-lisp-mode
 (define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
 
 ;;Highlight the counterpart of the parenthesis

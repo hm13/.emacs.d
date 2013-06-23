@@ -1,6 +1,9 @@
 (add-hook 'c++-mode-hook
 	  '(lambda ()
 	     (hs-minor-mode 1)
+	     (setq tab-width 4)
+	     (setq indent-rabs-mode nil)
+	     (setq c-basic-offset 4)
 	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
 	     (define-key c-mode-base-map [(C x) (C t)] 'indent-for-tab-command)
 	     ;; RET キーで自動改行+インデント

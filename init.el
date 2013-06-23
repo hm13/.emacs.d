@@ -13,8 +13,8 @@
 
 ;;;å¬êlê›íËhookì«Ç›çûÇ›
 (require 'c-hook)
-;(require 'c++-hook)
-;(require 'org-hook)
+(require 'c++-hook)
+(require 'org-hook)
 (require 'asm-hook)
 
 
@@ -34,7 +34,7 @@
 (set-face-foreground 'font-lock-variable-name-face "brightyellow")
 (set-face-foreground 'font-lock-type-face "brightgreen")
 (set-face-foreground 'font-lock-builtin-face "color-27")
-(set-face-foreground 'font-lock-constant-face "magenta")
+(set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
 
 ;;;Rebinding Eshell History

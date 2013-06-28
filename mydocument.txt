@@ -2,6 +2,9 @@
 // Memo
 //
 
+------Convert to utf8------
+nkf -w finename1 > filename2
+
 ------Show Color List-------
 M-x list-colors-display
 

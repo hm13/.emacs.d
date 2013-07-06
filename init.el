@@ -33,9 +33,6 @@
 (set-face-foreground 'font-lock-builtin-face "color-27")
 (set-face-foreground 'font-lock-constant-face "magenta")
 (set-face-foreground 'font-lock-warning-face "red")
-;;Line Number
-(set-face-attribute 'linum nil :background "#000")
-(set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;;Rebinding Eshell History
 (add-hook 'eshell-mode-hook
@@ -81,6 +78,9 @@
 ;;;çsî‘çÜï\é¶
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
+(set-face-attribute 'linum nil :background "#000")
+(set-face-attribute 'linum nil :foreground "#AAA")
+
 
 ;;;Config of lispxmp.el
 (require 'lispxmp)

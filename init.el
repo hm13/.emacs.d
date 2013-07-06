@@ -6,14 +6,13 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
-;	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
 	)
        load-path))
 
 
 ;;;å¬êlê›íËhookì«Ç›çûÇ›
 (require 'c-hook)
-;(require 'c++-hook)
+(require 'c++-hook)
 (require 'org-hook)
 (require 'asm-hook)
 
@@ -23,7 +22,7 @@
 (set-face-background 'mode-line-inactive "black")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
-(set-face-foreground 'minibuffer-prompt "gray70") ;M-x
+(set-face-foreground 'minibuffer-prompt "gray80") ;M-x
 ;;Source
 (set-face-foreground 'font-lock-comment-face "cyan")
 (set-face-foreground 'font-lock-string-face  "color-203")
@@ -74,15 +73,18 @@
 
 
 ;;;open .h file in c++mode
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
 ;;;çsî‘çÜï\é¶
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
+(set-face-attribute 'linum nil :background "#000")
+(set-face-attribute 'linum nil :foreground "#AAA")
+
 
 ;;;Config of lispxmp.el
 (require 'lispxmp)
-;;Write note by typing C-x C-d under the emacs-lisp-mode
+;;Write note by typing C-x C-c under the emacs-lisp-mode
 (define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
 
 ;;Highlight the counterpart of the parenthesis

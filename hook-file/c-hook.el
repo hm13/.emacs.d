@@ -4,6 +4,8 @@
 	     (hs-minor-mode 1)
 	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
 	     (define-key c-mode-base-map [(C x) (t)] 'indent-for-tab-command)
+	     (define-key c-mode-base-map "\C-c;" 'comment-or-uncomment-region)
+	     (setq comment-style 'multi-line)
 	     (c-set-style "linux")
 	     (setq c-basic-offset 3) ;インデント幅
 	     (setq tab-width c-basic-offset)

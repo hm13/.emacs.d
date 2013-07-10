@@ -18,6 +18,7 @@
 (require 'asm-hook)
 
 
+
 ;;;Color Config
 ;;Mode Line
 (set-face-background 'mode-line-inactive "black")
@@ -31,7 +32,7 @@
 (set-face-foreground 'font-lock-function-name-face "brightblue")
 (set-face-foreground 'font-lock-variable-name-face "brightyellow")
 (set-face-foreground 'font-lock-type-face "brightgreen")
-(set-face-foreground 'font-lock-builtin-face "color-27")
+(set-face-foreground 'font-lock-builtin-face "color-30")
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
 

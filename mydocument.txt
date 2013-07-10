@@ -19,9 +19,10 @@ cd filename
 make
 make install
 
-------Unpack-------
+------Unpacking-------
 tar xzvf filename.tar.gz
 tar jxf filename.tar.bz2
+gunzip -c filename.tgz | tar -xvf -
 
 ------Emacs(evalutation)-------
 C-x C-e  ポイント直前の式を評価

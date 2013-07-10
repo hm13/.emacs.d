@@ -6,7 +6,6 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
-;	(expand-file-name "~/.emacs.d/color-theme-6.6.0")
 	)
        load-path))
 
@@ -24,7 +23,7 @@
 (set-face-background 'mode-line-inactive "black")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
-(set-face-foreground 'minibuffer-prompt "gray70") ;M-x
+(set-face-foreground 'minibuffer-prompt "gray80") ;M-x
 ;;Source
 (set-face-foreground 'font-lock-comment-face "cyan")
 (set-face-foreground 'font-lock-string-face  "color-203")
@@ -80,6 +79,9 @@
 ;;;çsî‘çÜï\é¶
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
+(set-face-attribute 'linum nil :background "#000")
+(set-face-attribute 'linum nil :foreground "#AAA")
+
 
 ;;;Config of lispxmp.el
 (require 'lispxmp)

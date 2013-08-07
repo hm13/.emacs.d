@@ -16,11 +16,12 @@
 (require 'org-hook)
 (require 'asm-hook)
 
-
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'mode-line-inactive "black")
-(set-face-foreground 'mode-line-inactive "gray70")
+(set-face-background 'mode-line-inactive "gray20")
+(set-face-foreground 'mode-line-inactive "gray80")
+(set-face-background 'mode-line "gray80")
+(set-face-foreground 'mode-line "black")
 ;;Mini Buffer
 (set-face-foreground 'minibuffer-prompt "gray80") ;M-x
 ;;Source
@@ -160,6 +161,7 @@
 
 ;;; メニューバーを非表示
 (menu-bar-mode 0)
+(line-number-mode 0)
 
 ;;;バックアップファイルを作らない
 (setq make-backup-files nil)

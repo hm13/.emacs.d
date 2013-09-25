@@ -2,6 +2,12 @@
 // Memo
 //
 
+------xclip------
+cat file | xclip -selection clipborard
+
+------Wireless Network Config file on xubuntu------
+sudo emacs -nw /etc/NetworkManager/system-connections/H640
+
 ------Convert to utf8------
 nkf -w finename1 > filename2
 

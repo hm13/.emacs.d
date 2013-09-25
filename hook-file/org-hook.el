@@ -1,11 +1,15 @@
 ;;;Enable color(only editting)
 (setq org-src-fontify-natively t)
+;;;Remove "Validate XHTML1.0..."
+(setq org-export-html-validation-link nil)
+(setq org-export-html-postamble nil)
 
 ;;;Org-mode config
 (require 'org)
 (set-face-foreground 'org-link "royal blue")
+(set-face-foreground 'org-document-title "green")
 (set-face-foreground 'org-document-info "sea green")
-
+(set-face-foreground 'org-document-info-keyword "green")
 
 ;;;Toggle right side turncation
 (setq org-startup-truncated nil)

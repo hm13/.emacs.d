@@ -1,0 +1,18 @@
+;;;Ruby
+(defun split-and-execute ()
+  (interactive)
+  (when (one-window-p)
+    (split-window-horizontally))
+  (setq bn (buffer-name))
+  (other-window 1)
+  (eshell)
+  (insert "ruby " bn)
+  (eshell-send-input)
+  (other-window 1)
+  )
+(add-hook 'ruby-mode-hook
+	  '(lambda()
+	     (set-default-coding-systems 'utf-8)
+	     (define-key ruby-mode-map [(C c) (c)] 'split-and-execute)
+	     ))
+(provide 'ruby-hook)

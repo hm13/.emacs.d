@@ -10,18 +10,18 @@
        load-path))
 
 
-;;;個人設定hook読み込み
+;;;Include hook
 (require 'c-hook)
 (require 'c++-hook)
 (require 'org-hook)
 (require 'asm-hook)
+(require 'ruby-hook)
+
 
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'mode-line-inactive "gray20")
-(set-face-foreground 'mode-line-inactive "gray80")
-(set-face-background 'mode-line "gray80")
-(set-face-foreground 'mode-line "black")
+(set-face-background 'mode-line-inactive "black")
+(set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
 (set-face-foreground 'minibuffer-prompt "gray80") ;M-x
 ;;Source
@@ -31,8 +31,8 @@
 (set-face-foreground 'font-lock-function-name-face "brightblue")
 (set-face-foreground 'font-lock-variable-name-face "brightyellow")
 (set-face-foreground 'font-lock-type-face "brightgreen")
-(set-face-foreground 'font-lock-builtin-face "color-27")
-(set-face-foreground 'font-lock-constant-face "magenta")
+(set-face-foreground 'font-lock-builtin-face "color-30")
+(set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
 
 ;;;Rebinding Eshell History
@@ -42,7 +42,6 @@
 	     (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input)
 	     )
 	  )
-
 
 ;;;Run eshell automatically after compile
 (require 'compile)
@@ -73,20 +72,14 @@
 	(message "Compile Abnormal and"))))
 
 
-;;;open .h file in c++mode
+;;;open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
-;;;行番号表示
+;;;Show line numbers
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
 (set-face-attribute 'linum nil :background "#000")
 (set-face-attribute 'linum nil :foreground "#AAA")
-
-
-;;;Config of lispxmp.el
-(require 'lispxmp)
-;;Write note by typing C-x C-c under the emacs-lisp-mode
-(define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
 
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
@@ -100,10 +93,10 @@
 (global-set-key [(C x) (C b)] 'buffer-menu)
 
 
-;;;右端で折り返す
+;;;Turncate lines on the right side
 (setq turncate-lines t)
 
-;;;カーソルの行を固定して画面スクロール
+;;;Scroll buffer
 (setq SC_LINE_NUM 1)
 (global-set-key "\M-p"
 		(lambda ()
@@ -118,25 +111,25 @@
 		  (forward-line SC_LINE_NUM)
 		  ))
 
-;;;mydocument.txtを開く
+;;;Open mydocument.txt
 (global-set-key (kbd "M-d")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/mydocument.txt")
 		  ))
 
-;;;init.elを開く
+;;;Open init.el
 (global-set-key (kbd "M-s")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/init.el")
 		  ))
 
-;;;カレントウィンドウの拡大（M-h:垂直方向 M-w:水平方向）
+;;;Change window size
 (global-set-key "\M-h" 'enlarge-window)
 (global-set-key "\M-w" 'enlarge-window-horizontally)
 
-;;;Clear the current buffer, leaving one prompt at the top.
+;;;Clear eshell buffer
 (defun eshell/cls ()
   (interactive)
   (let ((inhibit-read-only t))
@@ -144,36 +137,22 @@
 
 ;;;Change window
 (defun other-window-or-split ()
-    (interactive)
-      (when (one-window-p)
-	    (split-window-vertically))
-        (other-window 1))
+  (interactive)
+  (when (one-window-p)
+    (split-window-vertically))
+  (other-window 1))
 (define-key global-map "\C-t" 'other-window-or-split)
 
-;;;スクロール行数を1行に
+
 (setq scroll-step 1)
 
-;;;スタートページを表示しない
 (setq inhibit-startup-message t)
 
-;;;ビープ音をフラッシュにする
 (setq visible-bell nil)
 
-;;; メニューバーを非表示
 (menu-bar-mode 0)
-(line-number-mode 0)
 
-;;;バックアップファイルを作らない
 (setq make-backup-files nil)
 
-;;;C-hをバックスペースにする
 (global-set-key "\C-h" 'delete-backward-char)
-
-;;;Ruby自動改行とインデント設定
-(add-hook 'ruby-mode-hook
-	  '(lambda()
-	     (local-set-key "\C-m" 'newline-and-indent)
-	     (set-default-coding-systems 'utf-8)
-	     ))
-
 

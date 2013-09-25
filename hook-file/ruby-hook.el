@@ -14,5 +14,6 @@
 	  '(lambda()
 	     (set-default-coding-systems 'utf-8)
 	     (define-key ruby-mode-map [(C c) (c)] 'split-and-execute)
+	     (electric-indent-mode)
 	     ))
 (provide 'ruby-hook)

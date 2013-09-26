@@ -1,53 +1,3 @@
-./test.out 
-./freq_filter1.out
-./freq_filter1.out
-ls
-./test.out 
-./test.out 
-./test.out 
-cls
-cls
-./test.out 
-ls
-./main.out aa
-./main.out 3+3
-./main.out +
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out  a+a
-./main.out  a+a
-./main.out
-./main.out
-./main.out a+2
-./main.out a+a
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out a+1
-./main.out rr+d
-./main.out rr+
-./main.out +++
-./main.out a++a
-cls
-ls
-ls
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
-./shape_recog1.out 
 ls
 ./shape_recog2.out
 ls
@@ -126,3 +76,53 @@ ruby b.rb
 ruby b.rb
 ruby b.rb
 ruby b.rb
+ruby hello.rb
+ruby
+ruby hello.rb
+ruby ./hello.rb
+ruby ./rwc2010.rb
+ruby ./rwc2010.rb
+ruby ./rwc2010.rb
+cls
+ruby ./rwc2010.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./ary.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./game_mgr.rb
+ruby ./main.rb
+ls
+ruby main.rb 
+ruby ./main.rb
+ruby ./main.rbruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./gameMgr.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./main.rb
+ruby ./Ball.rb
+ruby ./Ball.rb
+ruby ./Ball.rb
+ruby ./Ball.rb
+ruby ./Ball.rb
+ruby ./Ball.rb
+ruby ./main.rb
+ruby ./break_next_redo.rb

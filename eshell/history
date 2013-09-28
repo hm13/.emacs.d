@@ -1,88 +1,3 @@
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-ls
-./hogege.out 
-ls
-cls
-ls
-cd ..
-ls
-cd CodeSnippet/
-ls
-ls
-./hogege.out 
-ls
-ruby main.rb 
-ruby main.rb 
-ls
-./main.out 
-ls
-./charfreq.out 
-./charfreq.out 
-./charfreq.out ../CanteburyCorpusData/alice29.txt
-./charfreq.out ../CanteburyCorpusData/alice29.txt
-cls
-ls
-./charfreq.out 
-./charfreq.out ../CanteburyCorpusData/alice29.txt
-ls
-./charfreq.out 
-./charfreq.out 
-./charfreq.out CanteburyCorpusData/alice29.txt
-cls
-ls
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby a.rb
-ruby %sb.rb
-b.rb
-ruby %sb.rb
-ruby b.rb
-ruby b.rb
-ruby b.rb
-ruby b.rb
-ruby hello.rb
-ruby
-ruby hello.rb
-ruby ./hello.rb
-ruby ./rwc2010.rb
-ruby ./rwc2010.rb
-ruby ./rwc2010.rb
-cls
-ruby ./rwc2010.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./ary.rb
-ruby ./main.rb
-ruby ./main.rb
-ruby ./main.rb
-ruby ./main.rb
 ruby ./game_mgr.rb
 ruby ./main.rb
 ls
@@ -126,3 +41,88 @@ ruby ./method.rb
 ruby ./method.rb
 ruby ./method.rb
 ruby ./method.rb
+ruby ./method.rb
+ruby ./method.rb
+ruby ./method.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./dist.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+ruby ./fact.rb
+cls
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./class.rb
+cls
+ruby ./class.rb
+ruby ./class.rb
+ruby ./class.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+cls
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./hello_class.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+cls
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+ruby ./hello_class.rb
+cls
+ruby ./class_method.rb
+ruby ./class_method.rb
+ruby ./class_method.rb
+ruby ./class_method.rb
+ruby ./class_method.rb

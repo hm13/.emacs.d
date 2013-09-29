@@ -11,10 +11,13 @@
   (eshell-send-input)
   (other-window 1)
   )
+
 (add-hook 'ruby-mode-hook
 	  '(lambda()
 	     (set-default-coding-systems 'utf-8)
 	     (define-key ruby-mode-map [(C c) (c)] 'split-and-execute)
 	     (electric-indent-mode)
+	     (define-key ruby-mode-map [(C c) (C c)] 'comment-region)
+	     (define-key ruby-mode-map [(C c) (C u)] 'uncomment-region)
 	     ))
 (provide 'ruby-hook)

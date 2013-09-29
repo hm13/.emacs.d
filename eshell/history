@@ -1,50 +1,3 @@
-ls
-./shape_recog2.out
-ls
-./shape_recog1.out
-./shape_recog1.out
-./shape_recog1.out
-ls
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-ls
-./hogege.out 
-ls
-cls
-ls
-cd ..
-ls
-cd CodeSnippet/
-ls
-ls
-./hogege.out 
-ls
-ruby main.rb 
-ruby main.rb 
-ls
-./main.out 
-ls
-./charfreq.out 
-./charfreq.out 
-./charfreq.out ../CanteburyCorpusData/alice29.txt
 ./charfreq.out ../CanteburyCorpusData/alice29.txt
 cls
 ls
@@ -126,3 +79,50 @@ ruby ./Ball.rb
 ruby ./Ball.rb
 ruby ./main.rb
 ruby ./break_next_redo.rb
+ruby ./test.rb
+ls
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+cls
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+cls./test.rb:19:in `<main>': undefined method `conpact' for [3, 4]:Array (NoMethodError)
+cls
+cls
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+cls
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+ruby ./inject.rb
+cls

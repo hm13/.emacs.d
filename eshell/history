@@ -1,0 +1,69 @@
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rbruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./count_check.rb
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb a b
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb ls
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb impression_of_snippets.txt
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb impression_of_snippets.txt 
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb impression_of_snippets.txt 
+ruby ./calc_avg_line.rb CodeSnippets/*
+ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb
+ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ruby ./calc_avg_line.rb
+ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ls

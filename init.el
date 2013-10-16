@@ -75,10 +75,12 @@
 ;;;open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
+;;;open.jsnp
+(add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
+
 ;;;Show line numbers
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
-(set-face-attribute 'linum nil :background "#000")
 (set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;Highlight the counterpart of the parenthesis

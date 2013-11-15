@@ -1,4 +1,3 @@
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
 ruby ./gen_byte_vs_vote.sh
 ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
 ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
@@ -125,4 +124,5 @@ cls9
 cls
 ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
 cls
+ruby ./txt_pgm_converter.sh
 ruby ./txt_pgm_converter.sh

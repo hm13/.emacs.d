@@ -26,13 +26,13 @@
 	    (error t))
 	  (hs-show-all))
     (toggle-selective-display column)))
+
 (add-to-list 'hs-special-modes-alist
 	     '(ruby-mode
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
-	       (lambda (arg) (ruby-end-of-block)) nil))
-(load-library "hideshow")
-(add-hook 'ruby-mode-hook 'hs-minor-mode)
+ 	       (lambda (arg) (ruby-end-of-block)) nil))
 
+(load-library "hideshow")
 (add-hook 'ruby-mode-hook
 	  '(lambda()
 	     (set-default-coding-systems 'utf-8)
@@ -42,6 +42,7 @@
 	     (define-key ruby-mode-map [(C c) (C u)] 'uncomment-region)
 	     (define-key ruby-mode-map "\C-i" 'toggle-hiding)
 	     ))
+(add-hook 'ruby-mode-hook 'hs-minor-mode)
 
 
 (provide 'ruby-hook)

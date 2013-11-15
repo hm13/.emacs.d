@@ -1,69 +1,128 @@
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rbruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./count_check.rb
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb a b
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb ls
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb impression_of_snippets.txt
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb impression_of_snippets.txt 
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb impression_of_snippets.txt 
-ruby ./calc_avg_line.rb CodeSnippets/*
-ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb
-ruby ./calc_avg_line.rb CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
-ruby ./calc_avg_line.rb
-ruby calc_avg_line.rb ./CodeSnippets/*.jsnp
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./gen_byte_vs_vote.sh
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+cls
+cls
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
 ls
+./a.out 
+./a.out 
+./a.out a b
+ls
+./a.out 
+rm a.out
+./labeling.out 
+./labeling.out 
+ls
+rm labeling.out
+rm labeling.out
+./labeling.out 
+ls
+./labeling.out 
+sl
+ls
+./labeling.out 
+./labeling.out 
+ls
+ls
+./labeling.out ./BinCS/1.pgm 
+ls
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+cat ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+ls
+cat 1a.pgm 
+f
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+cat 1a.pgm 
+f
+./labeling.out ./BinCS/1.pgm 
+cat 1a.pgm 
+cat 1a.pgm 
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+ls
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+ruby ./txt_pgm_converter.sh
+./labeling.out BinCS/1.pgm 
+ls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls9
+cls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls
+ruby ./txt_pgm_converter.sh

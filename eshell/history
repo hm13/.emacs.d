@@ -1,0 +1,23 @@
+ls
+./ex2_4.out
+./ex2_4.out > mid2a.txt
+./ex2_4.out > mid2a.txt
+ls
+./ex2_4.out
+./ex2_4.out > med2a.txt
+./ex2_4.out > med2a.txt
+./ex2_4.out > med2a-im.txt
+ls
+./ex2_4.out > med2a.txt
+./ex2_4.out > med2a.txt
+ls
+./ex2_4.out > med2a.txt
+./ex2_4.out
+./ex2_4.out
+./ex2_4.out > med2a.txt
+ls
+./ex2_4.out > mid2a.txt
+cat mid2a.txt
+ls
+./ex2_4.out > mid2a.txt
+cat mid2a.txt

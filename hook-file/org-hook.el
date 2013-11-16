@@ -40,6 +40,7 @@
 (add-hook 'org-mode-hook
 	  '(lambda ()
 	     (local-set-key (kbd "C-m") 'newline-and-indent)
+	     (local-set-key (kbd "C-c C-c") 'comment-region)
 	     )
 	  )
 

@@ -1,23 +1,128 @@
+ruby ./gen_byte_vs_vote.sh
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+cls
+cls
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
 ls
-./ex2_4.out
-./ex2_4.out > mid2a.txt
-./ex2_4.out > mid2a.txt
+./a.out 
+./a.out 
+./a.out a b
 ls
-./ex2_4.out
-./ex2_4.out > med2a.txt
-./ex2_4.out > med2a.txt
-./ex2_4.out > med2a-im.txt
+./a.out 
+rm a.out
+./labeling.out 
+./labeling.out 
 ls
-./ex2_4.out > med2a.txt
-./ex2_4.out > med2a.txt
+rm labeling.out
+rm labeling.out
+./labeling.out 
 ls
-./ex2_4.out > med2a.txt
-./ex2_4.out
-./ex2_4.out
-./ex2_4.out > med2a.txt
+./labeling.out 
+sl
 ls
-./ex2_4.out > mid2a.txt
-cat mid2a.txt
+./labeling.out 
+./labeling.out 
 ls
-./ex2_4.out > mid2a.txt
-cat mid2a.txt
+ls
+./labeling.out ./BinCS/1.pgm 
+ls
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+cat ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+ls
+cat 1a.pgm 
+f
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+cat 1a.pgm 
+f
+./labeling.out ./BinCS/1.pgm 
+cat 1a.pgm 
+cat 1a.pgm 
+./labeling.out ./BinCS/1.pgm 
+./labeling.out ./BinCS/1.pgm 
+ls
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+./labeling.out BinCS/1.pgm 
+ruby ./txt_pgm_converter.sh
+./labeling.out BinCS/1.pgm 
+ls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls9
+cls
+ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
+cls
+ruby ./txt_pgm_converter.sh
+ruby ./txt_pgm_converter.sh

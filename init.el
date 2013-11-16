@@ -6,11 +6,12 @@
 	(expand-file-name "~/.emacs.d/auto-install")
 	(expand-file-name "~/.emacs.d/hook-file")
 	(expand-file-name "~/.emacs.d/elpa/org-20130204")
+	(expand-file-name "~/.emacs.d/site-lisp")
 	)
        load-path))
 
 
-;;;Include hook
+;;;Include my hook
 (require 'c-hook)
 (require 'c++-hook)
 (require 'org-hook)
@@ -34,6 +35,35 @@
 (set-face-foreground 'font-lock-builtin-face "color-30")
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
+
+
+
+;;
+;; ace jump mode major function
+;;
+(autoload
+  'ace-jump-mode
+  "ace-jump-mode"
+  "Emacs quick move minor mode"
+  t)
+;; you can select the key you prefer to
+(define-key global-map (kbd "M-j") 'ace-jump-mode)
+
+;;
+;; enable a more powerful jump back function from ace jump mode
+;;
+(autoload
+  'ace-jump-mode-pop-mark
+  "ace-jump-mode"
+  "Ace jump back:-)"
+  t)
+(eval-after-load "ace-jump-mode"
+  '(ace-jump-mode-enable-mark-sync))
+(define-key global-map (kbd "C-j") 'ace-jump-mode-pop-mark)
+
+
+
+
 
 ;;;Rebinding Eshell History
 (add-hook 'eshell-mode-hook
@@ -75,10 +105,12 @@
 ;;;open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
+;;;open.jsnp
+(add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
+
 ;;;Show line numbers
 (global-linum-mode t)
 (setq linum-format "%3d\u2502")
-(set-face-attribute 'linum nil :background "#000")
 (set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;Highlight the counterpart of the parenthesis

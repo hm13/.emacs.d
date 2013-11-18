@@ -1,128 +1,128 @@
-ruby ./gen_byte_vs_vote.sh
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
+./ex2_4.out > 1.csv
+./ex2_4.out
+cls
+./ex2_4.out > 1.csv
+./ex2_4.out > 1.csv
+ls
+./ex6_1.out 
+./ex6_1.out 
+ls
+./ex2_4.out 
+./ex2_4.out > 1.csv
+./ex2_4.out > 1.csv
+./ex2_4.out 
+./ex2_4.out > 1.csv
+ls
+./ex6_1.out 
+ls
+ls
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out > b.csv
+./ex6_1.out > b.csv
+cat b.csv 
+rm b.csv 
+rm b.csv 
+./ex6_1.out
+cls
+ls
+./ex6_1.out 
+ls
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+ls
+./ex6_1.out 
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+./ex6_1.out
+./ex6_1.out
+./ex6_1.out
+./ex6_1.out > 2.csv
+ls
+./ex6_1.out > b.csv
+./ex6_1.out
+ls
+cd ../1
+ls
+./ex2_4.out 
+ls ../2
+ls ../2-extra/
+ls ../2-extra/
+./ex2_4.out 
+./ex2_4.out > 3.csv
+./ex2_4.out > 3.csv
+./ex2_4.out 
+ls
+cd ..
+cd 2-extra/
+ls
+./ex6_1.out 
+./ex6_1.out > b.csv
+./ex6_1.out 
+cd ..
+cd 1
+ls
+./ex2_4.out 
+./ex2_4.out > ../2-extra/3.csv
+ls
+./ex6_1.out 
+./ex6_1.out  > 4H.csv
+./ex6_1.out  
+./ex6_1.out  
+./ex6_1.out  > b[n].csv
+ls
+cat b\[n\].csv 
+mv b\[n\].csv bn.csv
+cls
+./ex6_1.out 
+./ex6_1.out > 4H.csv
+./ex6_1.out > 4H.csv
+./ex6_1.out 
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > bn.csv
+cls
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 3.csv
+ls
+./ex6_2.out 
+ls
+./ex6_2.out 
+./ex6_2.out 
+./ex6_2.out 
+ls
+cygstart.exe ex6_2.wav
+cygstart.exe ../sample6.wav 
+cygstart.exe ex6_2.wav
+ls
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
 cls
 cls
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ruby ./mentropy2.sh ./CodeSnippets/25.jsnp 
-ls
-./a.out 
-./a.out 
-./a.out a b
-ls
-./a.out 
-rm a.out
-./labeling.out 
-./labeling.out 
-ls
-rm labeling.out
-rm labeling.out
-./labeling.out 
-ls
-./labeling.out 
-sl
-ls
-./labeling.out 
-./labeling.out 
-ls
-ls
-./labeling.out ./BinCS/1.pgm 
-ls
-./labeling.out ./BinCS/1.pgm 
-./labeling.out ./BinCS/1.pgm 
-cat ./BinCS/1.pgm 
-./labeling.out ./BinCS/1.pgm 
-./labeling.out ./BinCS/1.pgm 
-ls
-cat 1a.pgm 
-f
-./labeling.out ./BinCS/1.pgm 
-./labeling.out ./BinCS/1.pgm 
-cat 1a.pgm 
-f
-./labeling.out ./BinCS/1.pgm 
-cat 1a.pgm 
-cat 1a.pgm 
-./labeling.out ./BinCS/1.pgm 
-./labeling.out ./BinCS/1.pgm 
-ls
-./labeling.out BinCS/1.pgm 
-./labeling.out BinCS/1.pgm 
-./labeling.out BinCS/1.pgm 
-./labeling.out BinCS/1.pgm 
-./labeling.out BinCS/1.pgm 
-ruby ./txt_pgm_converter.sh
-./labeling.out BinCS/1.pgm 
-ls
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-cls
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-cls9
-cls
-ruby ./txt_pgm_converter.sh ./CodeSnippets/1.jsnp 
-cls
-ruby ./txt_pgm_converter.sh
-ruby ./txt_pgm_converter.sh
+./main.out 
+./main.out  > a.csv
+./main.out  > a.csv
+./main.out  > b.csv

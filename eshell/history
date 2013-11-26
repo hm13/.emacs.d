@@ -1,3 +1,4 @@
+
 ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
 ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
 cls
@@ -126,3 +127,132 @@ cls
 ruby mentropy.sh
 ruby memo.rb 
 ruby memo.rb 
+=======
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out > b.csv
+./ex6_1.out > b.csv
+cat b.csv 
+rm b.csv 
+rm b.csv 
+./ex6_1.out
+cls
+ls
+./ex6_1.out 
+ls
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out 
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+ls
+./ex6_1.out 
+./ex6_1.out > 2.csv
+./ex6_1.out > 2.csv
+./ex6_1.out
+./ex6_1.out
+./ex6_1.out
+./ex6_1.out > 2.csv
+ls
+./ex6_1.out > b.csv
+./ex6_1.out
+ls
+cd ../1
+ls
+./ex2_4.out 
+ls ../2
+ls ../2-extra/
+ls ../2-extra/
+./ex2_4.out 
+./ex2_4.out > 3.csv
+./ex2_4.out > 3.csv
+./ex2_4.out 
+ls
+cd ..
+cd 2-extra/
+ls
+./ex6_1.out 
+./ex6_1.out > b.csv
+./ex6_1.out 
+cd ..
+cd 1
+ls
+./ex2_4.out 
+./ex2_4.out > ../2-extra/3.csv
+ls
+./ex6_1.out 
+./ex6_1.out  > 4H.csv
+./ex6_1.out  
+./ex6_1.out  
+./ex6_1.out  > b[n].csv
+ls
+cat b\[n\].csv 
+mv b\[n\].csv bn.csv
+cls
+./ex6_1.out 
+./ex6_1.out > 4H.csv
+./ex6_1.out > 4H.csv
+./ex6_1.out 
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > aa.csv
+./ex6_1.out > bn.csv
+cls
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 33.csv
+./ex6_1.out > 3.csv
+ls
+./ex6_2.out 
+ls
+./ex6_2.out 
+./ex6_2.out 
+./ex6_2.out 
+ls
+cygstart.exe ex6_2.wav
+cygstart.exe ../sample6.wav 
+cygstart.exe ex6_2.wav
+ls
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+./main.out 
+cls
+cls
+./main.out 
+./main.out  > a.csv
+./main.out  > a.csv
+./main.out  > b.csv
+ls
+./ex6_2.out 
+alis
+alias
+ruby ./a.rb
+ruby ./a.rb
+ls
+./ex2_4.out 
+./ex2_4.out 
+./ex2_4.out > ex2_4.csv
+./ex2_4.out 
+./ex2_4.out > ex2_4-2.csv
+./ex2_4.out > ex2_4-2.csv
+ls
+source login_mysql.sh 
+cls
+ls
+source login_mysql.sh 
+exit

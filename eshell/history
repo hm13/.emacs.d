@@ -1,258 +1,128 @@
-
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
 cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh
-ruby ./txt_to_pgm.sh
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnpcls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
 cls
 cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh
-ruby ./txt_to_pgm.sh
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-[[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 21, 21, 21, 21, 21, 21, 0, 22, 22, 22, 0, 23, 0, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 0, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 26, 26, 26, 26, 26, 26, 26, 0, 27, 27, 27, 27, 27, 27, 27, 27, 0, 28, 0, 29, s29, 29, 29, 29, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 26, 26, 26, 26, 26, 26, 0, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 0, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 0, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 0, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], 32]
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./mentropy.sh
+ruby ./mentropy.sh ../CodeSnippets/1.jsnp
+ruby ./mentropy.sh
+ruby ./mentropy.sh ../CodeSnippets/1.jsnp
+ls
+ls
+rm CodeEntropy.rb~
+ls
+./CodeEntropy.rb
+ls -l CodeEntropy.rb
+chmod u+x ./*.rb
+./CodeEntropy.rb
+./CodeEntropy.rb
+ruby ./CodeEntropy.rb
 cls
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
-ruby ./txt_to_pgm.sh ./CodeSnippets/1.jsnp
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+cls
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+cls
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+./mentropy.sh
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+ruby ./main.sh
+ruby ./main.sh
+cls
 cls
 ruby ./main.sh
 ruby ./main.sh
-ruby ./vote_analyzer.sh
-ruby VotesInspector.rb 
-ruby VotesInspector.rb 
-ruby VotesInspector.rb 
-ruby VotesInspector.rb 
-ruby VotesInspector.rb 
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+cls60 470 92
 cls
-ruby VotesInspector.rb 
-ruby VotesInspector.rb 
+ruby ./main.sh
+ruby ./main.sh
 cls
-ruby VotesInspector.rb 
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
+ruby ./entropy.sh ./CodeSnippets/1.jsnp ruby ./CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
 cls
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
+ruby ./main.sh
 ls
 cls
 ls
-ruby memo.rb
-ruby ./memo.rb
-ruby ./memo.rb
-{"0"=>5050, "1"=>388, "2"=>281, "3"=>301, "4"=>241, "5"=>276, "6"=>228, "7"=>400, "8"=>299, "9"=>265, "10"=>295, "11"=>318, "12"=>363, "13"=>408, "14"=>346, "15"=>401, "16"=>322, "17"=>367, "18"=>348, "19"=>268, "20"=>341, "21"=>307, "22"=>297, "23"=>300, "24"=>373, "25"=>279, "26"=>358, "27"=>314, "28"=>263, "29"=>292, "30"=>305, "31"=>342, "32"=>334, "33"=>306, "34"=>348, "35"=>325, "36"=>378, "37"=>304, "38"=>376, "39"=>248, "40"=>266, "41"=>390, "42"=>334, "43"=>309, "44"=>315, "45"=>349, "46"=>409, "47"=>312, "48"=cls>279, "49"=>275, "50"=>290, "51"=>356, "52"=>336, "53"=>306, "54"=>375, "55"=>370, "56"=>302, "57"=>349, "58"=>320, "59"=>297, "60"=>369, "61"=>286, "62"=>293, "63"=>268, "64"=>360, "65"=>322, "66"=>294, "67"=>340, "68"=>462, "69"=>310, "70"=>383, "71"=>307, "72"=>274, "73"=>350, "74"=>411, "75"=>273, "76"=>333, "77"=>363, "78"=>332, "79"=>396, "80"=>355, "81"=>324, "82"=>389, "83"=>345, "84"=>346, "85"=>283, "86"=>270, "87"=>323, "88"=>299, "89"=>319, "90"=>326, "91"=>325, "92"=>314, "93"=>361, "94"=>370, "95"=>297, "96"=>364, "97"=>339, "98"=>361, "99"=>268, "100"=>287, "101"=>314, "102"=>334, "103"=>273, "104"=>331, "105"=>306, "106"=>319, "107"=>344, "108"=>298, "109"=>369, "110"=>410, "111"=>348, "112"=>341, "113"=>310, "114"=>428, "115"=>344, "116"=>325, "117"=>420, "118"=>278, "119"=>366, "120"=>320, "121"=>318}
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
 cls
-{"0"=>5050, "1"=>388, "2"=>281, "3"=>301, "4"=>241, "5"=>276, "6"=>228, "7"=>400, "8"=>299, "9"=>265, "10"=>295, "11"=>318, "12"=>363, "13"=>408, "14"=>346, "15"=>401, "16"=>322, "17"=>367, "18"=>348, "19"=>268, "20"=>341, "21"=>307, "22"=>297, "23"=>300, "24"=>373, "25"=>279, "26"=>358, "27"=>314, "28"=>263, "29"=>292, "30"=>305, "31"=>342, "32"=>334, "33"=>306, "34"=>348, "35"=>325, "36"=>378, "37"=>304, "38"=>376, "39"=>248, "40"=>266, "41"=>390, "42"=>334, "43"=>309, "44"=>315, "45"=>349, "46"=>409, "47"=>312, "48"=cls>279, "49"=>275, "50"=>290, "51"=>356, "52"=>336, "53"=>306, "54"=>375, "55"=>370, "56"=>302, "57"=>349, "58"=>320, "59"=>297, "60"=>369, "61"=>286, "62"=>293, "63"=>268, "64"=>360, "65"=>322, "66"=>294, "67"=>340, "68"=>462, "69"=>310, "70"=>383, "71"=>307, "72"=>274, "73"=>350, "74"=>411, "75"=>273, "76"=>333, "77"=>363, "78"=>332, "79"=>396, "80"=>355, "81"=>324, "82"=>389, "83"=>345, "84"=>346, "85"=>283, "86"=>270, "87"=>323, "88"=>299, "89"=>319, "90"=>326, "91"=>325, "92"=>314, "93"=>361, "94"=>370, "95"=>297, "96"=>364, "97"=>339, "98"=>361, "99"=>268, "100"=>287, "101"=>314, "102"=>334, "103"=>273, "104"=>331, "105"=>306, "106"=>319, "107"=>344, "108"=>298, "109"=>369, "110"=>410, "111"=>348, "112"=>341, "113"=>310, "114"=>428, "115"=>344, "116"=>325, "117"=>420, "118"=>278, "119"=>366, "120"=>320, "121"=>318}
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
 cls
-ruby ./memo.rb
-ruby ./memo.rb
+ruby ./Votes.rb
+ruby ./Votes.rb
+ruby ./Votes.rb
+ruby ./Votes.rb
 ruby ./Votes.rb
 ruby ./Votes.rb
 ruby ./Votes.rb
 cls
 ruby ./Votes.rb
-ruby ./memo.rb
-ruby ./memo.rb
-ruby ./Votes.rb
-cls
-ruby mentropy.sh
-ruby memo.rb 
-ruby memo.rb 
-=======
-./ex6_1.out 
-./ex6_1.out 
-./ex6_1.out 
-./ex6_1.out 
-./ex6_1.out > b.csv
-./ex6_1.out > b.csv
-cat b.csv 
-rm b.csv 
-rm b.csv 
-./ex6_1.out
-cls
-ls
-./ex6_1.out 
-ls
-./ex6_1.out 
-./ex6_1.out 
-./ex6_1.out 
-./ex6_1.out > 2.csv
-./ex6_1.out > 2.csv
-./ex6_1.out > 2.csv
-ls
-./ex6_1.out 
-./ex6_1.out > 2.csv
-./ex6_1.out > 2.csv
-./ex6_1.out
-./ex6_1.out
-./ex6_1.out
-./ex6_1.out > 2.csv
-ls
-./ex6_1.out > b.csv
-./ex6_1.out
-ls
-cd ../1
-ls
-./ex2_4.out 
-ls ../2
-ls ../2-extra/
-ls ../2-extra/
-./ex2_4.out 
-./ex2_4.out > 3.csv
-./ex2_4.out > 3.csv
-./ex2_4.out 
-ls
-cd ..
-cd 2-extra/
-ls
-./ex6_1.out 
-./ex6_1.out > b.csv
-./ex6_1.out 
-cd ..
-cd 1
-ls
-./ex2_4.out 
-./ex2_4.out > ../2-extra/3.csv
-ls
-./ex6_1.out 
-./ex6_1.out  > 4H.csv
-./ex6_1.out  
-./ex6_1.out  
-./ex6_1.out  > b[n].csv
-ls
-cat b\[n\].csv 
-mv b\[n\].csv bn.csv
-cls
-./ex6_1.out 
-./ex6_1.out > 4H.csv
-./ex6_1.out > 4H.csv
-./ex6_1.out 
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > aa.csv
-./ex6_1.out > bn.csv
-cls
-./ex6_1.out > 33.csv
-./ex6_1.out > 33.csv
-./ex6_1.out > 33.csv
-./ex6_1.out > 33.csv
-./ex6_1.out > 3.csv
-ls
-./ex6_2.out 
-ls
-./ex6_2.out 
-./ex6_2.out 
-./ex6_2.out 
-ls
-cygstart.exe ex6_2.wav
-cygstart.exe ../sample6.wav 
-cygstart.exe ex6_2.wav
-ls
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-./main.out 
-cls
-cls
-./main.out 
-./main.out  > a.csv
-./main.out  > a.csv
-./main.out  > b.csv
-ls
-./ex6_2.out 
-alis
-alias
-ruby ./a.rb
-ruby ./a.rb
-ls
-./ex2_4.out 
-./ex2_4.out 
-./ex2_4.out > ex2_4.csv
-./ex2_4.out 
-./ex2_4.out > ex2_4-2.csv
-./ex2_4.out > ex2_4-2.csv
-ls
-source login_mysql.sh 
-cls
-ls
-source login_mysql.sh 
-exit
+ruby ./Code.rb
+ruby ./Code.rb
+ruby ./Code.rb
+ruby ./Code.rb

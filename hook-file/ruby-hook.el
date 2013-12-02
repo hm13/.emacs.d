@@ -25,8 +25,8 @@
 	      (hs-toggle-hiding)
 	    (error t))
 	  (hs-show-all))
-    (toggle-selective-display column)))
-
+    (toggle-selective-display column))
+)
 (add-to-list 'hs-special-modes-alist
 	     '(ruby-mode
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
@@ -36,11 +36,13 @@
 (add-hook 'ruby-mode-hook
 	  '(lambda()
 	     (set-default-coding-systems 'utf-8)
-	     (define-key ruby-mode-map [(C c) (c)] 'split-and-execute)
-	     (electric-indent-mode)
+     	     (electric-indent-mode)
 	     (define-key ruby-mode-map [(C c) (C c)] 'comment-region)
 	     (define-key ruby-mode-map [(C c) (C u)] 'uncomment-region)
-	     (define-key ruby-mode-map "\C-i" 'toggle-hiding)
+     	     (define-key ruby-mode-map [(C o) (C o)] 'split-and-execute)
+	     (define-key ruby-mode-map [(C o) (C h)] 'hs-hide-all)
+	     (define-key ruby-mode-map [(C o) (C s)] 'hs-show-all)
+    	     (define-key ruby-mode-map "\C-i" 'toggle-hiding)
 	     ))
 (add-hook 'ruby-mode-hook 'hs-minor-mode)
 

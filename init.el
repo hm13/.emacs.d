@@ -40,6 +40,9 @@
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
 
+;;
+;;Indent Current Buffer
+;;
 (defun iwb ()
   "indent whole buffer"
   (interactive)

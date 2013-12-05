@@ -5,21 +5,6 @@ ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./mentropy.sh
@@ -126,3 +111,18 @@ ruby ./Code.rb
 ruby ./Code.rb
 ruby ./Code.rb
 ruby ./Code.rb
+ls
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+./a.out 
+cls
+cls
+./a.out 
+./a.out 
+./a.out 
+ruby ./main.sh
+cls
+ruby ./main.sh
+cls

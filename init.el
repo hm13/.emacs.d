@@ -7,10 +7,13 @@
         (expand-file-name "~/.emacs.d/hook-file")
         (expand-file-name "~/.emacs.d/elpa/org-20130204")
         (expand-file-name "~/.emacs.d/site-lisp")
-	(expand-file-name "~/.emacs.d/site-lisp/org/lisp")
+        (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
+        (expand-file-name "~/.emacs.d/site-lisp/powerline")
         )
        load-path))
 
+(require 'powerline)
+(powerline-default-theme)
 
 ;;;Include my hook
 (require 'c-hook)
@@ -22,10 +25,10 @@
 
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'mode-line-inactive "black")
+(set-face-background 'mode-line-inactive "gray10")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
-(set-face-foreground 'minibuffer-prompt "gray80") ;M-x
+(set-face-foreground 'minibuffer-prompt "color-46") ;M-x
 ;;Source
 (set-face-foreground 'font-lock-comment-face "cyan")
 (set-face-foreground 'font-lock-string-face  "color-203")
@@ -36,8 +39,6 @@
 (set-face-foreground 'font-lock-builtin-face "color-30")
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
-
-
 
 (defun iwb ()
   "indent whole buffer"

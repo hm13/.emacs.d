@@ -1,4 +1,34 @@
 ruby ./Pgm.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+cls
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./test.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
+ruby ./test.rb
+ruby ./test.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
@@ -7,86 +37,66 @@ ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
-ruby ./mentropy.sh
-ruby ./mentropy.sh ../CodeSnippets/1.jsnp
-ruby ./mentropy.sh
-ruby ./mentropy.sh ../CodeSnippets/1.jsnp
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls
+ruby ./Pgm.rb
 ls
-ls
-rm CodeEntropy.rb~
-ls
-./CodeEntropy.rb
-ls -l CodeEntropy.rb
-chmod u+x ./*.rb
-./CodeEntropy.rb
-./CodeEntropy.rb
-ruby ./CodeEntropy.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+cls127
 cls
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-cls
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-cls
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-ruby ./CodeEntropy.rb
-./mentropy.sh
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-./main.sh 
-ruby ./main.sh
-ruby ./main.sh
-cls
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./main.sh
-cls60 470 92
-cls
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./entropy.sh ./CodeSnippets/1.jsnp ruby ./CodeEntropy.rb
-ruby CodeEntropy.rb
-ruby CodeEntropy.rb
-ruby CodeEntropy.rb
-ruby CodeEntropy.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
 cls
 ruby ./main.sh
-ls
+ruby ./main.sh
 cls
-ls
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
@@ -97,32 +107,22 @@ cls
 ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
-cls
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-cls
-ruby ./Votes.rb
+ruby ./Code.rb
 ruby ./Code.rb
-ruby ./Code.rb
-ruby ./Code.rb
-ruby ./Code.rb
-ls
-./a.out 
-./a.out 
-./a.out 
-./a.out 
-./a.out 
-cls
-cls
-./a.out 
-./a.out 
-./a.out 
 ruby ./main.sh
 cls
 ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./test.rb<2>cls
+cls
+ruby ./text.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
 cls

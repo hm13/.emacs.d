@@ -39,6 +39,7 @@
                "\\documentclass[12pt,a4paper,papersize]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{hyperref}
+\\usepackage{graphicx}
 \\hypersetup{setpagesize=false,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")

@@ -9,8 +9,13 @@
         (expand-file-name "~/.emacs.d/site-lisp")
         (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
         (expand-file-name "~/.emacs.d/site-lisp/powerline")
+        (expand-file-name "~/.emacs.d/site-lisp/direx-el")
         )
        load-path))
+
+(require 'direx)
+(global-set-key (kbd "C-x C-d") 'direx:jump-to-directory)
+
 
 (require 'powerline)
 (powerline-default-theme)
@@ -205,3 +210,17 @@
 (setq make-backup-files nil)
 
 (global-set-key "\C-h" 'delete-backward-char)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(direx:closed-icon "|+")
+ '(direx:leaf-icon "| ")
+ '(direx:open-icon "| "))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

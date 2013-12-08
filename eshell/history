@@ -2,18 +2,6 @@ ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls
-ruby ./Pgm.rb
-ls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
 cls127
 cls
 ruby ./Pgm.rb
@@ -126,3 +114,15 @@ ruby ./a.rb > ../Pgms/DefaultColor/best3_32.pgm
 ruby ./a.rb > ../Pgms/DefaultColor/worst1_15.pgm
 ruby ./a.rb > ../Pgms/DefaultColor/worst2_35.pgm
 ruby ./a.rb > ../Pgms/DefaultColor/worst3_89.pgm
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ls
+cls
+ls
+ls

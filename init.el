@@ -16,10 +16,6 @@
 (require 'direx)
 (global-set-key (kbd "C-x C-d") 'direx:jump-to-directory)
 
-
-(require 'powerline)
-(powerline-default-theme)
-
 (require 'auto-complete)
 (global-auto-complete-mode t)
 (define-key ac-complete-mode-map "\C-n" 'ac-next)

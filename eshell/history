@@ -1,24 +1,10 @@
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls127
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
 ruby ./Pgm.rb
 ruby ./main.sh
 ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
+ruby ./Pgm.rb
+ls
 ruby ./main.sh
 cls
 ruby ./main.sh
@@ -26,103 +12,117 @@ ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Code.rb
-ruby ./Code.rb
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./test.rb<2>cls
-cls
-ruby ./text.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb > best1_34.pgm
-ruby ./a.rb
-ruby ./a.rb > best2_89.pgm
-ruby ./a.rb
-ruby ./a.rb > best3_32.pgm
-ruby ./a.rb > worst1_15.pgm
-ruby ./a.rb > worst2_35.pgm
-ruby ./a.rb > worst3_91.pgm
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb
-cd ../../Scripts/
-ruby ./a.rb
-ruby ./a.rb > ../Pgms/BlackWhite/worst3_91.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst2_35.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst1_15.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best1_34.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best2_89.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best3_32.pgm
-ruby ./a.rb
-cls
-ruby ./a.rb
-ruby ./a.rb
-ruby ./a.rb > ../Pgms/BlackWhite/best1_34.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best2_89.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best3_32.pgm
-ruby ./a.rb
-cls
-ruby ./a.rb > ../Pgms/BlackWhite/worst1_15.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst2_35.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst3_91.pgm
-ruby ./a.rb
-ruby ./a.rb > ../Pgms/BlackWhite/worst3_91.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst2_35.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/worst1_15.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best3_32.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best2_89.pgm
-ruby ./a.rb > ../Pgms/BlackWhite/best1_34.pgm
-cd ../Pgms/BlackWhite/
-ls
-ruby ./a.rb
-ruby ./a.rb > ../Pgms/DefaultColor/best1_34.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/best2_89.pgm
-cd ..
-cd ..
-cd Scripts/
-ls
-ruby ./a.rb > ../Pgms/DefaultColor/best2_89.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/best1_34.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/best3_32.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/worst1_15.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/worst2_35.pgm
-ruby ./a.rb > ../Pgms/DefaultColor/worst3_89.pgm
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./main.sh
 ruby ./Pgm.rb
 ruby ./main.sh
 ruby ./main.sh
 ruby ./main.sh
-ls
+ruby ./main.sh
 cls
 ls
+rm metatest.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
 ls
+ls
+ls
+ls
+ruby ./main.sh
+ls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh

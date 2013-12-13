@@ -10,7 +10,7 @@
 	     ;; RET キーで自動改行+インデント
 	     (define-key c++-mode-map "\C-m" 'newline-and-indent)
 	     ;; C-c cでコンパイルコマンド
-	     (define-key c++-mode-map [(C c) (c)] 'compile)
+	     (define-key c++-mode-map [(C o) (C o)] 'compile)
 	     ;;Makefileがなかった時のコンパイルコマンド
 	     (unless (file-exists-p "Makefile")
 	       (set (make-local-variable 'compile-command)
@@ -20,7 +20,7 @@
 		      	      (or (getenv "CC") "g++") 
 		      	      (file-name-sans-extension file)
 		      	      (or (getenv "CPPFLAGS") "");c preprocessor
-		      	      (or (getenv "CFLAGS") "-Wall -g")
+		      	      (or (getenv "CFLAGS") "-Wall -g -std=c++11")
 			      file
 			      ))))
 	     ))

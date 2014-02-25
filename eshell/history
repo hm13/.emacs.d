@@ -1,128 +1,128 @@
+ruby ./main.sh > BuseResults/moment0_of_inertia.txt
+ruby ./main.sh > BuseResults/momentg_of_inertia.txt
+ruby ./main.sh > BuseResults/xmomentg_of_inertia.txt
+ruby ./main.sh > BuseResults/xmoment0_of_inertia.txt
 ruby ./main.sh
 ruby ./main.sh
-ruby ./Pgm.rb
+ruby ./main.sh > BuseResults/momentg_of_inertia_1.txt
+ruby ./main.sh > BuseResults/moment0_of_inertia_1.txt
+ruby ./main.sh > BuseResults/xmomentg_of_inertia_1.txt
+ruby ./main.sh > BuseResults/xmoment0_of_inertia_1.txt
+ruby ./main.sh > BuseResults/momentg_of_inertia_3.txt
+ruby ./main.sh > BuseResults/moment0_of_inertia_3.txt
+ruby ./main.sh > BuseResults/xmomentg_of_inertia_3.txt
+ruby ./main.sh > BuseResults/xmoment0_of_inertia_3.txt
+ruby ./main.sh
+ruby ./main.sh > BuseResults/area_variance.txt
+ruby ./main.sh
+ruby ./main.sh DornResults/All/area_variance.txt
+ruby ./main.sh > DornResults/All/area_variance.txt
+ruby ./main.sh
+ruby ./main.sh > DornResults/All/gx_relative.txt
+ruby ./main.sh > DornResults/All/gx_relative_without_indent.txt
+ruby ./main.sh > DornResults/All/max_area4.txt
+ruby ./main.sh > DornResults/All/max_area8.txt
+ruby ./main.sh > DornResults/All/max_square_area.txt
+ruby ./main.sh > DornResults/All/white_rate.txt
+ruby ./main.sh > DornResults/All/area_variance.txt
+ruby ./main.sh > DornResults/All/moment0.txt
+ruby ./main.sh > DornResults/All/moment0_of_inertia.txt
+ruby ./main.sh > DornResults/All/momentg_of_inertia.txt
+ruby ./main.sh > DornResults/All/moment0_of_inertia.txt
+ruby ./main.sh > DornResults/All/xmomentg_of_inertia.txt
+ruby ./main.sh > DornResults/All/xmoment0_of_inertia.txt
+ruby ./main.sh > DornResults/All/momentg_of_inertia_1.txt
+ruby ./main.sh > DornResults/All/moment0_of_inertia_1.txt
+ruby ./main.sh > DornResults/All/xmomentg_of_inertia_1.txt
+ruby ./main.sh > DornResults/All/xmoment0_of_inertia_1.txt
+ruby ./main.sh > DornResults/All/momentg_of_inertia_3.txt
+ruby ./main.sh > DornResults/All/moment0_of_inertia_3.txt
+ruby ./main.sh > DornResults/All/xmomentg_of_inertia_3.txt
+ruby ./main.sh > DornResults/All/xmoment0_of_inertia_3.txt
 ruby ./main.sh
 ruby ./main.sh
-ruby ./Pgm.rb
-ls
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
+ruby ./main.sh > BuseResults/white_rate.txt
 ls
-rm metatest.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
 cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ls
-ls
-ls
-ls
-ruby ./main.sh
-ls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./Pgm.rb
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
+coqc test.v 
+coqc test.v 
+ruby ./test.v
+ruby ./b3.v
+ruby ./b3.v
+coqc ./b3.v
+coqc ./b3.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./b2.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v
+coqc ./test.v

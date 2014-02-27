@@ -1,3 +1,28 @@
+(require 'uim)
+;; uim-mode by higepon
+;; ON/OFFでカーソルの色を変更。
+;; ON時に必ず日本語入力モードにする
+(defadvice uim-this-command-keys (around uim-send-zenkaku-hankaku)
+  (setq ad-return-value `[zenkaku-hankaku]))
+(defadvice uim-mode (around my-uim-mode)
+  ad-do-it
+  (set-face-background 'cursor (if ad-return-value "blue" "indian red"))
+  (ad-activate-regexp "uim-send-zenkaku-hankaku")
+  (uim-process-input)
+  (ad-deactivate-regexp "uim-send-zenkaku-hankaku"))
+(ad-activate-regexp "my-uim-mode")
+
+
+(defun toggle-mode-line () "toggles the modeline on and off"
+  (interactive)
+  (setq mode-line-format
+        (if (equal mode-line-format nil)
+            (default-value 'mode-line-format)) )
+  (redraw-display))
+;(add-hook 'find-file-hook 'toggle-mode-line)
+
+;(autoload 'hide-mode-line "hide-mode-line" nil t)
+
 ;;;Load Path Config
 (setq load-path
       (append
@@ -10,6 +35,7 @@
         (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
         (expand-file-name "~/.emacs.d/site-lisp/powerline")
         (expand-file-name "~/.emacs.d/site-lisp/direx-el")
+        (expand-file-name "~/.emacs.d/site-lisp/php-mode-1.5.0")
         )
        load-path))
 
@@ -24,6 +50,8 @@
 (require 'org-hook)
 (require 'asm-hook)
 (require 'ruby-hook)
+(require 'latex-hook)
+(require 'coq-hook)
 
 
 ;;;Color Config
@@ -42,6 +70,7 @@
 (set-face-foreground 'font-lock-builtin-face "color-30")
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
+
 
 ;;
 ;;Indent Current Buffer
@@ -124,10 +153,10 @@
 ;;;open.jsnp
 (add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
 
-;;;Show line numbers
-(global-linum-mode t)
-(setq linum-format "%3d\u2502")
-(set-face-attribute 'linum nil :foreground "#AAA")
+;; ;;;Show line numbers
+;; (global-linum-mode t)
+;; (setq linum-format "%3d\u2502")
+;; (set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
@@ -216,4 +245,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(font-latex-math-face ((t (:foreground "brightyellow"))))
+ '(font-latex-sectioning-0-face ((t (:inherit nil :foreground "color-28" :height 1.1))))
+ '(font-latex-sectioning-1-face ((t (:foreground "color-22" :height 1.1))))
+ '(font-latex-sectioning-2-face ((t (:foreground "color-51" :height 1.1))))
+ '(font-latex-sectioning-3-face ((t (:foreground "color-39" :height 1.1))))
+ '(font-latex-sectioning-4-face ((t (:foreground "color-31" :height 1.1))))
+ '(font-latex-sectioning-5-face ((t (:foreground "color-45" :weight normal))))
+ '(font-latex-sedate-face ((t (:foreground "brightmagenta")))))

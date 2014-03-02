@@ -39,6 +39,7 @@
                "\\documentclass[12pt,a4paper,papersize]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{hyperref}
+\\usepackage{graphicx}
 \\hypersetup{setpagesize=false,colorlinks=true}"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
@@ -48,7 +49,7 @@
 ))
 
 (setq org-latex-pdf-process
-            '("lualatex %f" "lualatex %f" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
+            '("lualatex %f bibtex handout lualatex %f" "lualatex %f" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
 ))
 
 (setq org-file-apps

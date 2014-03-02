@@ -29,7 +29,7 @@
 		      	      (or (getenv "CC") "g++") 
 		      	      (file-name-sans-extension file)
 		      	      (or (getenv "CPPFLAGS") "");c preprocessor
-		      	      (or (getenv "CFLAGS") "-Wall -g")
+		      	      (or (getenv "CFLAGS") "-Wall -g -std=c++11")
 			      file
 			      ))))
 	     ))

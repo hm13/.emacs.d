@@ -1,3 +1,4 @@
+
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
 
@@ -9,10 +10,17 @@
         (expand-file-name "~/.emacs.d/hook-file")
         (expand-file-name "~/.emacs.d/elpa/org-20130204")
         (expand-file-name "~/.emacs.d/site-lisp")
-	(expand-file-name "~/.emacs.d/site-lisp/org/lisp")
+        (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
+        (expand-file-name "~/.emacs.d/site-lisp/powerline")
+        (expand-file-name "~/.emacs.d/site-lisp/direx-el")
+        (expand-file-name "~/.emacs.d/site-lisp/php-mode-1.5.0")
         )
        load-path))
 
+(require 'auto-complete)
+(global-auto-complete-mode t)
+(define-key ac-complete-mode-map "\C-n" 'ac-next)
+(define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;;;Include my hook
 (require 'c-hook)
@@ -20,14 +28,16 @@
 (require 'org-hook)
 (require 'asm-hook)
 (require 'ruby-hook)
+(require 'latex-hook)
+(require 'coq-hook)
 
 
 ;;;Color Config
 ;;Mode Line
-(set-face-background 'mode-line-inactive "black")
+(set-face-background 'mode-line-inactive "gray10")
 (set-face-foreground 'mode-line-inactive "gray70")
 ;;Mini Buffer
-(set-face-foreground 'minibuffer-prompt "gray80") ;M-x
+(set-face-foreground 'minibuffer-prompt "color-46") ;M-x
 ;;Source
 (set-face-foreground 'font-lock-comment-face "cyan")
 (set-face-foreground 'font-lock-string-face  "color-203")
@@ -40,7 +50,9 @@
 (set-face-foreground 'font-lock-warning-face "red")
 
 
-
+;;
+;;Indent Current Buffer
+;;
 (defun iwb ()
   "indent whole buffer"
   (interactive)
@@ -119,10 +131,10 @@
 ;;;open.jsnp
 (add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
 
-;;;Show line numbers
-(global-linum-mode t)
-(setq linum-format "%3d\u2502")
-(set-face-attribute 'linum nil :foreground "#AAA")
+;; ;;;Show line numbers
+;; (global-linum-mode t)
+;; (setq linum-format "%3d\u2502")
+;; (set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
@@ -198,3 +210,24 @@
 (setq make-backup-files nil)
 
 (global-set-key "\C-h" 'delete-backward-char)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(direx:closed-icon "|+")
+ '(direx:leaf-icon "| ")
+ '(direx:open-icon "| "))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(font-latex-math-face ((t (:foreground "brightyellow"))))
+ '(font-latex-sectioning-0-face ((t (:inherit nil :foreground "color-28" :height 1.1))))
+ '(font-latex-sectioning-1-face ((t (:foreground "color-22" :height 1.1))))
+ '(font-latex-sectioning-2-face ((t (:foreground "color-51" :height 1.1))))
+ '(font-latex-sectioning-3-face ((t (:foreground "color-39" :height 1.1))))
+ '(font-latex-sectioning-4-face ((t (:foreground "color-31" :height 1.1))))
+ '(font-latex-sectioning-5-face ((t (:foreground "color-45" :weight normal))))
+ '(font-latex-sedate-face ((t (:foreground "brightmagenta")))))

@@ -1,3 +1,4 @@
+
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
@@ -81,48 +82,3 @@ cls
 ruby ./main.sh
 ls
 cls
-ls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh
-cls
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-ruby ./Votes.rb
-cls
-ruby ./Votes.rb
-ruby ./Code.rb
-ruby ./Code.rb
-ruby ./Code.rb
-ruby ./Code.rb
-ls
-./sound_rec_play_ans.out 
-ls
-cls
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-cls
-cls
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-cls
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 
-./sound_rec_play_ans.out 

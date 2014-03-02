@@ -2,26 +2,6 @@ ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
 ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-cls
-cls
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
-ruby ./Pgm.rb
 ruby ./mentropy.sh
 ruby ./mentropy.sh ../CodeSnippets/1.jsnp
 ruby ./mentropy.sh
@@ -126,3 +106,23 @@ ruby ./Code.rb
 ruby ./Code.rb
 ruby ./Code.rb
 ruby ./Code.rb
+ls
+./sound_rec_play_ans.out 
+ls
+cls
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+cls
+cls
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+cls
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 
+./sound_rec_play_ans.out 

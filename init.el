@@ -1,4 +1,6 @@
-;;;Load Path Config
+(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
+
 (setq load-path
       (append
        (list

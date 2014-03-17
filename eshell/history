@@ -1,13 +1,3 @@
-ruby ./main.sh > BuseResults/moment0_of_inertia.txt
-ruby ./main.sh > BuseResults/momentg_of_inertia.txt
-ruby ./main.sh > BuseResults/xmomentg_of_inertia.txt
-ruby ./main.sh > BuseResults/xmoment0_of_inertia.txt
-ruby ./main.sh
-ruby ./main.sh
-ruby ./main.sh > BuseResults/momentg_of_inertia_1.txt
-ruby ./main.sh > BuseResults/moment0_of_inertia_1.txt
-ruby ./main.sh > BuseResults/xmomentg_of_inertia_1.txt
-ruby ./main.sh > BuseResults/xmoment0_of_inertia_1.txt
 ruby ./main.sh > BuseResults/momentg_of_inertia_3.txt
 ruby ./main.sh > BuseResults/moment0_of_inertia_3.txt
 ruby ./main.sh > BuseResults/xmomentg_of_inertia_3.txt
@@ -126,3 +116,13 @@ coqc ./test.v
 coqc ./test.v
 coqc ./test.v
 coqc ./test.v
+coqc ./main.sh
+coqc ./main.sh
+ruby main.sh 
+coqc ./main.sh
+ruby main.sh 
+coqc ./main.sh
+ruby main.sh 
+ruby main.sh 
+coqc ./main.sh
+ruby main.sh 

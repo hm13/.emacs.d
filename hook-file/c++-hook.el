@@ -1,11 +1,20 @@
+(load-library "hideshow")
+
 (add-hook 'c++-mode-hook
 	  '(lambda ()
-	     (hs-minor-mode 1)
+     	     (hs-minor-mode 1)
+     	     (c-set-style "BSD")
 	     (setq tab-width 4)
 	     (setq indent-tabs-mode t)
-	     (c-set-style "BSD")
 	     (setq c-basic-offset 4)
-	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
+
+     	     (set-default-coding-systems 'utf-8)
+	     (define-key c-mode-base-map [(C c) (C c)] 'comment-region)
+	     (define-key c-mode-base-map [(C c) (C u)] 'uncomment-region)
+	     (define-key c-mode-base-map [(C o) (C h)] 'hs-hide-all)
+	     (define-key c-mode-base-map [(C o) (C s)] 'hs-show-all)
+    	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
+
 	     (define-key c-mode-base-map [(C x) (C t)] 'indent-for-tab-command)
 	     ;; RET キーで自動改行+インデント
 	     (define-key c++-mode-map "\C-m" 'newline-and-indent)
@@ -24,4 +33,6 @@
 			      file
 			      ))))
 	     ))
+
+(add-hook 'c++-mode-hook 'hs-minor-mode)
 (provide 'c++-hook)

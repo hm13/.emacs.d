@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ruby ./main.sh > BuseResults/momentg_of_inertia_3.txt
 ruby ./main.sh > BuseResults/moment0_of_inertia_3.txt
 ruby ./main.sh > BuseResults/xmomentg_of_inertia_3.txt
@@ -126,3 +127,89 @@ ruby main.sh
 ruby main.sh 
 coqc ./main.sh
 ruby main.sh 
+=======
+
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./Pgm.rb
+ruby ./mentropy.sh
+ruby ./mentropy.sh ../CodeSnippets/1.jsnp
+ruby ./mentropy.sh
+ruby ./mentropy.sh ../CodeSnippets/1.jsnp
+ls
+ls
+rm CodeEntropy.rb~
+ls
+./CodeEntropy.rb
+ls -l CodeEntropy.rb
+chmod u+x ./*.rb
+./CodeEntropy.rb
+./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+cls
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+cls
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+cls
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+ruby ./CodeEntropy.rb
+./mentropy.sh
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+./main.sh 
+ruby ./main.sh
+ruby ./main.sh
+cls
+cls
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./Pgm.rb
+ruby ./main.sh
+cls60 470 92
+cls
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./entropy.sh ./CodeSnippets/1.jsnp ruby ./CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby CodeEntropy.rb
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+ruby ./main.sh
+cls
+ruby ./main.sh
+ls
+cls
+>>>>>>> 7a30a31b09374ac2660f62be9c03d0260355117c

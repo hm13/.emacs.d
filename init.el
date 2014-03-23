@@ -1,27 +1,3 @@
-(require 'uim)
-;; uim-mode by higepon
-;; ON/OFFでカーソルの色を変更。
-;; ON時に必ず日本語入力モードにする
-(defadvice uim-this-command-keys (around uim-send-zenkaku-hankaku)
-  (setq ad-return-value `[zenkaku-hankaku]))
-(defadvice uim-mode (around my-uim-mode)
-  ad-do-it
-  (set-face-background 'cursor (if ad-return-value "blue" "indian red"))
-  (ad-activate-regexp "uim-send-zenkaku-hankaku")
-  (uim-process-input)
-  (ad-deactivate-regexp "uim-send-zenkaku-hankaku"))
-(ad-activate-regexp "my-uim-mode")
-
-
-(defun toggle-mode-line () "toggles the modeline on and off"
-  (interactive)
-  (setq mode-line-format
-        (if (equal mode-line-format nil)
-            (default-value 'mode-line-format)) )
-  (redraw-display))
-;(add-hook 'find-file-hook 'toggle-mode-line)
-
-;(autoload 'hide-mode-line "hide-mode-line" nil t)
 
 ;;;Load Path Config
 (setq load-path

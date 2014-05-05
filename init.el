@@ -13,9 +13,6 @@
         )
        load-path))
 
-(require 'direx)
-(global-set-key (kbd "C-x C-d") 'direx:jump-to-directory)
-
 (require 'auto-complete)
 (global-auto-complete-mode t)
 (define-key ac-complete-mode-map "\C-n" 'ac-next)

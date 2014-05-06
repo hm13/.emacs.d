@@ -49,7 +49,7 @@
 ))
 
 (setq org-latex-pdf-process
-            '("lualatex %f" "lualatex %f" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
+            '("lualatex %f bibtex handout lualatex %f" "lualatex %f" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
 ))
 
 (setq org-file-apps

@@ -1,4 +1,7 @@
-;;;Load Path Config
+(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
+
+
 (setq load-path
       (append
        (list
@@ -9,7 +12,7 @@
         (expand-file-name "~/.emacs.d/site-lisp")
         (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
         (expand-file-name "~/.emacs.d/site-lisp/powerline")
-        (expand-file-name "~/.emacs.d/site-lisp/direx-el")
+        (expand-file-name "~/.emacs.d/site-lisp/php-mode-1.5.0")
         )
        load-path))
 
@@ -24,6 +27,8 @@
 (require 'org-hook)
 (require 'asm-hook)
 (require 'ruby-hook)
+(require 'latex-hook)
+(require 'coq-hook)
 
 
 ;;;Color Config
@@ -42,6 +47,7 @@
 (set-face-foreground 'font-lock-builtin-face "color-30")
 (set-face-foreground 'font-lock-constant-face "magenda")
 (set-face-foreground 'font-lock-warning-face "red")
+
 
 ;;
 ;;Indent Current Buffer
@@ -124,10 +130,10 @@
 ;;;open.jsnp
 (add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
 
-;;;Show line numbers
-(global-linum-mode t)
-(setq linum-format "%3d\u2502")
-(set-face-attribute 'linum nil :foreground "#AAA")
+;; ;;;Show line numbers
+;; (global-linum-mode t)
+;; (setq linum-format "%3d\u2502")
+;; (set-face-attribute 'linum nil :foreground "#AAA")
 
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
@@ -203,17 +209,3 @@
 (setq make-backup-files nil)
 
 (global-set-key "\C-h" 'delete-backward-char)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(direx:closed-icon "|+")
- '(direx:leaf-icon "| ")
- '(direx:open-icon "| "))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

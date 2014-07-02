@@ -12,8 +12,8 @@
 	     (setq indent-tabs-mode t) ;インデントはタブで
 	     ;; RET キーで自動改行+インデント
 	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
-	     ;; C-c cでコンパイルコマンド
-	     (define-key c-mode-map [(C c) (c)] 'compile)
+	     ;; C-o C-oでコンパイルコマンド
+	     (define-key c-mode-map [(C o) (C o)] 'compile)
 	     ;;Makefileがなかった時のコンパイルコマンド
 	     (unless (file-exists-p "Makefile")
 	       (set (make-local-variable 'compile-command)

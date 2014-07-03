@@ -1,7 +1,8 @@
-(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
+;;
+;;General
+;;
 
-
+;;Set Load Path
 (setq load-path
       (append
        (list
@@ -16,12 +17,7 @@
         )
        load-path))
 
-(require 'auto-complete)
-(global-auto-complete-mode t)
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
-
-;;;Include my hook
+;;Include my hook
 (require 'c-hook)
 (require 'c++-hook)
 (require 'org-hook)
@@ -31,12 +27,35 @@
 (require 'coq-hook)
 
 
-;;;Color Config
+
+;;
+;;Auto Complete
+;;
+(require 'auto-complete)
+(global-auto-complete-mode t)
+(define-key ac-complete-mode-map "\C-n" 'ac-next)
+(define-key ac-complete-mode-map "\C-p" 'ac-previous)
+
+
+
+;;
+;;PHP mode
+;;
+(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
+
+
+;;
+;;Color Config
+;;
+
 ;;Mode Line
 (set-face-background 'mode-line-inactive "gray10")
 (set-face-foreground 'mode-line-inactive "gray70")
+
 ;;Mini Buffer
 (set-face-foreground 'minibuffer-prompt "color-46") ;M-x
+
 ;;Source
 (set-face-foreground 'font-lock-comment-face "cyan")
 (set-face-foreground 'font-lock-string-face  "color-203")
@@ -61,7 +80,7 @@
 (global-set-key (kbd "C-x C-i") 'iwb)
 
 ;;
-;; ace jump mode major function
+;; Ace Jump Mode
 ;;
 (autoload
   'ace-jump-mode
@@ -71,9 +90,7 @@
 ;; you can select the key you prefer to
 (define-key global-map (kbd "M-j") 'ace-jump-mode)
 
-;;
 ;; enable a more powerful jump back function from ace jump mode
-;;
 (autoload
   'ace-jump-mode-pop-mark
   "ace-jump-mode"
@@ -86,8 +103,9 @@
 
 
 
-
-;;;Rebinding Eshell History
+;;
+;;Rebind Eshell History
+;;
 (add-hook 'eshell-mode-hook
           '(lambda ()
              (local-set-key (kbd "C-p") 'eshell-previous-matching-input-from-input)
@@ -95,7 +113,10 @@
              )
           )
 
-;;;Run eshell automatically after compile
+
+;;
+;;Run eshell automatically after compile
+;;
 (require 'compile)
 (defvar yel-compile-auto-close t
   "* If non-nil, a window is automatically closed after (\\[compile]).")

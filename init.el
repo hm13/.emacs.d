@@ -25,6 +25,7 @@
 (require 'ruby-hook)
 (require 'latex-hook)
 (require 'coq-hook)
+(require 'markdown-hook)
 
 
 

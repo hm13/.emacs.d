@@ -28,6 +28,10 @@
 (require 'markdown-hook)
 
 
+;;
+;;Commenting
+;;
+(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 
 ;;
 ;;Auto Complete

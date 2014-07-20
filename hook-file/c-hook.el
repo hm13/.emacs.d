@@ -4,7 +4,7 @@
 	     (hs-minor-mode 1)
 	     (define-key c-mode-base-map "\C-i" 'hs-toggle-hiding)
 	     (define-key c-mode-base-map [(C x) (t)] 'indent-for-tab-command)
-	     (define-key c-mode-base-map "\C-c;" 'comment-or-uncomment-region)
+	     (define-key c-mode-base-map [(C c) (C c)] 'comment-or-uncomment-region)
 	     (setq comment-style 'multi-line)
 	     (c-set-style "linux")
 	     (setq c-basic-offset 3) ;インデント幅
@@ -13,7 +13,7 @@
 	     ;; RET キーで自動改行+インデント
 	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
 	     ;; C-c cでコンパイルコマンド
-	     (define-key c-mode-map [(C c) (c)] 'compile)
+	     (define-key c-mode-map [(C o) (C o)] 'compile)
 	     ;;Makefileがなかった時のコンパイルコマンド
 	     (unless (file-exists-p "Makefile")
 	       (set (make-local-variable 'compile-command)

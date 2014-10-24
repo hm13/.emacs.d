@@ -253,7 +253,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(eshell-prompt ((t (:foreground "color-172" :weight bold))))
- '(font-lock-string-face ((t (:foreground "color-215"))))
+ '(font-lock-builtin-face ((t (:foreground "color-36"))))
+ '(font-lock-function-name-face ((t (:foreground "color-45"))))
+ '(font-lock-string-face ((t (:foreground "color-136"))))
  '(isearch ((t (:background "color-40" :foreground "lightskyblue1"))))
  '(isearch-fail ((t (:background "color-125"))))
  '(markdown-header-face-1 ((t (:inherit outline-2 markdown-header-face))))
@@ -264,4 +266,6 @@
  '(markdown-header-face-6 ((t (:inherit outline-6 markdown-header-face))))
  '(markdown-inline-code-face ((t (:foreground "color-122"))))
  '(markdown-list-face ((t (:foreground "brightgreen"))))
- '(tuareg-font-lock-operator-face ((t (:foreground "color-70")))))
+ '(term ((t (:foreground "color-189"))))
+ '(tuareg-font-lock-governing-face ((t (:foreground "color-40"))))
+ '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))

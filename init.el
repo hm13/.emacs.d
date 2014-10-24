@@ -6,7 +6,7 @@
 (setq load-path
       (append
        (list
-        (expand-file-name "~/.emacs.d/")
+        (expand-file-name "~/.emacs.d/mydoc/")
         (expand-file-name "~/.emacs.d/auto-install")
         (expand-file-name "~/.emacs.d/hook-file")
         (expand-file-name "~/.emacs.d/elpa/org-20130204")
@@ -26,7 +26,13 @@
 (require 'latex-hook)
 (require 'coq-hook)
 (require 'markdown-hook)
+(require 'ocaml-hook)
 
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
 
 ;;
 ;;Commenting
@@ -235,3 +241,27 @@
 (setq make-backup-files nil)
 
 (global-set-key "\C-h" 'delete-backward-char)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(eshell-prompt ((t (:foreground "color-172" :weight bold))))
+ '(font-lock-string-face ((t (:foreground "color-215"))))
+ '(isearch ((t (:background "color-40" :foreground "lightskyblue1"))))
+ '(isearch-fail ((t (:background "color-125"))))
+ '(markdown-header-face-1 ((t (:inherit outline-2 markdown-header-face))))
+ '(markdown-header-face-2 ((t (:inherit outline-5 markdown-header-face))))
+ '(markdown-header-face-3 ((t (:inherit outline-3 markdown-header-face))))
+ '(markdown-header-face-4 ((t (:inherit outline-1 markdown-header-face))))
+ '(markdown-header-face-5 ((t (:inherit outline-4 markdown-header-face))))
+ '(markdown-header-face-6 ((t (:inherit outline-6 markdown-header-face))))
+ '(markdown-inline-code-face ((t (:foreground "color-122"))))
+ '(markdown-list-face ((t (:foreground "brightgreen"))))
+ '(tuareg-font-lock-operator-face ((t (:foreground "color-70")))))

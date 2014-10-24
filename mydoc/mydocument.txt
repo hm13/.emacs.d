@@ -1,6 +1,8 @@
 //
 // Memo
 //
+------Change face------
+M-x customize-face -> all
 
 ------xclip------
 cat file | xclip -selection clipborard

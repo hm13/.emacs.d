@@ -18,7 +18,7 @@
   (newline)
   (indent-for-tab-command)
   (indent-for-tab-command)
-  (indent-for-tab-command)    
+  (indent-for-tab-command)
   )
 
 (add-hook 'coq-mode-hook
@@ -31,4 +31,14 @@
              (define-key coq-mode-map "\C-c;" 'comment-or-uncomment-region)
              (define-key coq-mode-map [(C m)] 'coq-newline-and-indent)
              ))
+(load-file "/usr/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")
+;(load "/opt/local/share/ProofGeneral/generic/proof-site.el")
+(defadvice coq-mode-config (after deactivate-holes-mode () activate)
+  "Deactivate holes-mode when coq-mode is activated."
+  (progn (holes-mode 0))
+  )
+(add-hook 'proof-mode-hook
+          '(lambda ()
+             (define-key proof-mode-map (kbd "C-c C-j") 'proof-goto-point)))
+
 (provide 'coq-hook)

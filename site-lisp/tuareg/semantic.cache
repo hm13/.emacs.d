@@ -1,0 +1,15 @@
+;; Object tuareg-mode-1.45.6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tuareg-mode-1.45.6/"
+  :tables (list 
+   (semanticdb-table "append-tuareg.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("setq" code nil nil [159 233]) ("tuareg-mode" function (:prototype-flag t :user-visible-flag t) nil [234 303]) ("camldebug" function (:prototype-flag t :user-visible-flag t) nil [304 363]) ("if" code nil nil [365 596]))
+    :file "append-tuareg.el"
+    :pointmax 597
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )

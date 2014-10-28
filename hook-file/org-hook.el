@@ -10,6 +10,9 @@
 ;;;Enable color(only editting)
 (setq org-src-fontify-natively t)
 
+;;;Display entities as UTF-8 characters.(Toggle by C-c C-x \)
+(setq org-pretty-entities t)
+
 ;;;Remove "Validate XHTML1.0..."
 (setq org-export-html-validation-link nil)
 (setq org-export-html-postamble nil)

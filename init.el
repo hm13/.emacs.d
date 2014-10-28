@@ -27,6 +27,7 @@
 (require 'coq-hook)
 (require 'markdown-hook)
 (require 'ocaml-hook)
+(require 'python-hook)
 
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -201,7 +202,7 @@
 (global-set-key (kbd "M-d")
                 (lambda ()
                   (interactive)
-                  (find-file "~/.emacs.d/mydocument.txt")
+                  (find-file "~/.emacs.d/mydoc/mydocument.txt")
                   ))
 
 ;;;Open init.el
@@ -266,6 +267,11 @@
  '(markdown-header-face-6 ((t (:inherit outline-6 markdown-header-face))))
  '(markdown-inline-code-face ((t (:foreground "color-122"))))
  '(markdown-list-face ((t (:foreground "brightgreen"))))
+ '(org-level-1 ((t (:foreground "color-226"))))
+ '(org-level-2 ((t (:foreground "color-76"))))
+ '(org-level-3 ((t (:foreground "color-42"))))
+ '(org-level-4 ((t (:foreground "color-31"))))
+ '(org-level-5 ((t (:foreground "color-23"))))
  '(term ((t (:foreground "color-189"))))
  '(tuareg-font-lock-governing-face ((t (:foreground "color-40"))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))

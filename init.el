@@ -2,6 +2,8 @@
 ;;General
 ;;
 
+
+
 ;;Set Load Path
 (setq load-path
       (append
@@ -39,6 +41,12 @@
 ;;Commenting
 ;;
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
+
+
+;;
+;;Replace string
+;;
+(global-set-key (kbd "C-x r") 'replace-regexp)
 
 ;;
 ;;Auto Complete

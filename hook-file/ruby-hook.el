@@ -39,7 +39,7 @@
      	     (electric-indent-mode)
 	     (define-key ruby-mode-map [(C c) (C c)] 'comment-region)
 	     (define-key ruby-mode-map [(C c) (C u)] 'uncomment-region)
-     	     (define-key ruby-mode-map [(C o) (C o)] 'ruby-split-and-execute)
+	     (define-key ruby-mode-map [(C o) (C o)] 'ruby-split-and-execute)
 	     (define-key ruby-mode-map [(C o) (h)] 'hs-hide-all)
 	     (define-key ruby-mode-map [(C o) (s)] 'hs-show-all)
     	     (define-key ruby-mode-map "\C-i" 'toggle-hiding)

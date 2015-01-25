@@ -56,6 +56,10 @@
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
+;;
+;;Bison mode
+;;
+(load "~/.emacs.d/site-lisp/bison-mode.el")
 
 
 ;;

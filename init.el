@@ -245,7 +245,9 @@
 
 (setq visible-bell nil)
 
-(menu-bar-mode 0)
+ (menu-bar-mode 0)
+ 
+ (tool-bar-mode 0)
 
 (setq make-backup-files nil)
 
@@ -280,6 +282,7 @@
  '(org-level-3 ((t (:foreground "color-42"))))
  '(org-level-4 ((t (:foreground "color-31"))))
  '(org-level-5 ((t (:foreground "color-23"))))
+ '(org-table ((t (:foreground "brightblue"))))
  '(term ((t (:foreground "color-189"))))
  '(tuareg-font-lock-governing-face ((t (:foreground "color-40"))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))

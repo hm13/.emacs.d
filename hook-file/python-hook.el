@@ -1,5 +1,5 @@
 ;;;Python
-(defun split-and-execute ()
+(defun python-split-and-execute ()
   (interactive)
   (when (one-window-p)
     (split-window-horizontally))
@@ -39,7 +39,7 @@
      	     (electric-indent-mode)
 	     (define-key python-mode-map [(C c) (C c)] 'comment-region)
 	     (define-key python-mode-map [(C c) (C u)] 'uncomment-region)
-     	     (define-key python-mode-map [(C o) (C o)] 'split-and-execute)
+     	     (define-key python-mode-map [(C o) (C o)] 'python-split-and-execute)
 	     (define-key python-mode-map [(C o) (h)] 'hs-hide-all)
 	     (define-key python-mode-map [(C o) (s)] 'hs-show-all)
     	     (define-key python-mode-map "\C-i" 'toggle-hiding)

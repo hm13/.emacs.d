@@ -1,5 +1,5 @@
 
-(defun split-and-execute ()
+(defun coq-split-and-execute ()
   (interactive)
   (when (one-window-p)
     (split-window-horizontally))
@@ -25,14 +25,28 @@
           '(lambda ()
              (hs-minor-mode 1)
              (setq comment-style 'multi-line)
-             (define-key coq-mode-map [(C o) (C o)] 'split-and-execute)
+             (define-key coq-mode-map [(C o) (C o)] 'coq-split-and-execute)
              (define-key coq-mode-map [(C x) (t)] 'indent-for-tab-command)
              (define-key coq-mode-map "\C-i" 'hs-toggle-hiding)
              (define-key coq-mode-map "\C-c;" 'comment-or-uncomment-region)
              (define-key coq-mode-map [(C m)] 'coq-newline-and-indent)
+             (setq SC_LINE_NUM 1)
+             (define-key coq-mode-map "\M-p"
+                             (lambda ()
+                               (interactive)
+                               (scroll-down SC_LINE_NUM)
+                               (forward-line (* -1 SC_LINE_NUM))
+                               ))
+             (define-key coq-mode-map "\M-n"
+                             (lambda ()
+                               (interactive)
+                               (scroll-up SC_LINE_NUM)
+                               (forward-line SC_LINE_NUM)
+                               ))
+
              ))
 (load-file "/usr/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")
-;(load "/opt/local/share/ProofGeneral/generic/proof-site.el")
+                                        ;(load "/opt/local/share/ProofGeneral/generic/proof-site.el")
 (defadvice coq-mode-config (after deactivate-holes-mode () activate)
   "Deactivate holes-mode when coq-mode is activated."
   (progn (holes-mode 0))

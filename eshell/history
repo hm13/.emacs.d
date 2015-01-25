@@ -1,0 +1,33 @@
+ls
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ruby hw7.rb 
+ls
+./a.out 
+cd ../../ComputerNetwork/i
+cd ../
+ls
+cd ..
+ls
+cd CompilerConstruction/
+ls
+cd 1/
+ls
+./expr_parser.out 
+./expr_parser.out 
+./expr_parser.out 
+cat c.ml | ocaml
+cat c.ml | ocaml

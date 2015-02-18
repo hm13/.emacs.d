@@ -111,39 +111,10 @@
   "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
-;; you can select the key you prefer to
-(define-key global-map (kbd "M-j") 'ace-jump-mode)
 
-;; enable a more powerful jump back function from ace jump mode
-(autoload
-  'ace-jump-mode-pop-mark
-  "ace-jump-mode"
-  "Ace jump back:-)"
-  t)
-(eval-after-load "ace-jump-mode"
-  '(ace-jump-mode-enable-mark-sync))
-(define-key global-map (kbd "C-j") 'ace-jump-mode-pop-mark)
+(global-set-key (kbd "M-j") 'ace-jump-mode)
 
 
-
-
-;;
-;;Rebind Eshell History
-;;
-(add-hook 'eshell-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "C-p") 'eshell-previous-matching-input-from-input)
-             (local-set-key (kbd "C-n") 'eshell-next-matching-input-from-input)
-             )
-          )
-
-
-;;
-;;Run eshell automatically after compile
-;;
-(require 'compile)
-(defvar yel-compile-auto-close t
-  "* If non-nil, a window is automatically closed after (\\[compile]).")
 
 (defadvice compile (after compile-aftercheck activate compile)
   "Adds a function of windows auto-close."
@@ -249,9 +220,9 @@
 
 (setq visible-bell nil)
 
- (menu-bar-mode 0)
- 
- (tool-bar-mode 0)
+(menu-bar-mode 0)
+
+(tool-bar-mode 0)
 
 (setq make-backup-files nil)
 

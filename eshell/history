@@ -31,3 +31,15 @@ ls
 ./expr_parser.out 
 cat c.ml | ocaml
 cat c.ml | ocaml
+ls
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 
+./test.out 

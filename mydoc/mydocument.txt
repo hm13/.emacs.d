@@ -78,3 +78,6 @@ g++ -I/usr/include/opengl -o souzou.out  -Wall -g souzou.cpp -lglut32 -lGLU32 -l
 
 ------Check New Line Character------
 od -c filename
+
+------Scan SSID------
+sudo iw dev wlp3s0 scan | grep -E -e '(SSID|signal)'

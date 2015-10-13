@@ -1,17 +1,13 @@
-;;Ocaml
-(defun split-and-execute ()
-  (interactive)
-  (when (one-window-p)
-    (split-window-horizontally))
-  (setq bn (buffer-name))
-  (save-buffer)
-  (other-window 1)
-  (eshell)
-  (insert "cat " bn " | ocaml")
-  (eshell-send-input)
-  (other-window 1)
-  )
+;;
+;;
+;; Ocaml
+;;
+;;
 
+
+;;
+;; Tuareg
+;;
 (add-hook 'tuareg-mode-hook
           '(lambda()
              (set-default-coding-systems 'utf-8)
@@ -21,25 +17,27 @@
              (define-key tuareg-mode-map [(C m)] 'newline)
              (global-unset-key (kbd "C-x C-i") 'iwb)
              ))
-
 (setq tuareg-support-metaocaml t)
-
-                                        ;(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist)) ;
-
-;; (setq auto-mode-alist
-;;       (append '(("\\.ml[ily]?$" . tuareg-mode)
-;;                 ("\\.topml$" . tuareg-mode))
-;;               auto-mode-alist))
-
 (add-to-list 'auto-mode-alist '("\\.ml\\'" . ocaml-mode))
 (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
 (autoload 'camldebug "camldebug" "Run the Caml debugger" t)
 
-(if (and (boundp 'window-system) window-system)
-    (when (string-match "XEmacs" emacs-version)
-      (if (not (and (boundp 'mule-x-win-initted) mule-x-win-initted))
-          (require 'sym-lock))
-      (require 'font-lock)))
+
+;;
+;; Merlin
+;;
+;; Add opam emacs directory to the load-path
+(add-to-list 'load-path "/home/sa-ti/.opam/4.02.1/share/emacs/site-lisp/")
+;; Load merlin-mode
+(require 'merlin)
+;; Start merlin on ocaml files
+(add-hook 'tuareg-mode-hook 'merlin-mode)
+(add-hook 'caml-mode-hook 'merlin-mode)
+;; Enable auto-complete
+(setq merlin-use-auto-complete-mode 'easy)
+;; Use opam switch to lookup ocamlmerlin binary
+(setq merlin-command 'opam)
 
 
 (provide 'ocaml-hook)
+

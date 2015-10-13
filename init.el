@@ -1,25 +1,8 @@
 ;;
-;;General
+;; Hooks
 ;;
-
-
-
-;;Set Load Path
-(setq load-path
-      (append
-       (list
-        (expand-file-name "~/.emacs.d/mydoc/")
-        (expand-file-name "~/.emacs.d/auto-install")
-        (expand-file-name "~/.emacs.d/hook-file")
-        (expand-file-name "~/.emacs.d/elpa/org-20130204")
-        (expand-file-name "~/.emacs.d/site-lisp")
-        (expand-file-name "~/.emacs.d/site-lisp/org/lisp")
-        (expand-file-name "~/.emacs.d/site-lisp/powerline")
-        (expand-file-name "~/.emacs.d/site-lisp/php-mode-1.5.0")
-        )
-       load-path))
-
-;;Include my hook
+(add-to-list 'load-path "~/.emacs.d/hook-file")
+(require 'ocaml-hook)
 (require 'c-hook)
 (require 'c++-hook)
 (require 'org-hook)
@@ -28,8 +11,19 @@
 (require 'latex-hook)
 (require 'coq-hook)
 (require 'markdown-hook)
-(require 'ocaml-hook)
 (require 'python-hook)
+
+;;
+;; Load Path
+;;
+(add-to-list 'load-path "~/.emacs.d/mydoc/")
+(add-to-list 'load-path "~/.emacs.d/auto-install")
+(add-to-list 'load-path "~/.emacs.d/elpa/org-20130204")
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/powerline")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/php-mode-1.5.0")
+
 
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -263,3 +257,4 @@
  '(tuareg-font-lock-governing-face ((t (:foreground "color-38"))))
  '(tuareg-font-lock-multistage-face ((t (:foreground "color-245" :weight bold))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))
+

@@ -13,15 +13,18 @@
   )
 
 (add-hook 'tuareg-mode-hook
-	  '(lambda()
-	     (set-default-coding-systems 'utf-8)
-     	     (electric-indent-mode)
-	     (define-key tuareg-mode-map [(C c) (C c)] 'comment-region)
-	     (define-key tuareg-mode-map [(C c) (C u)] 'uncomment-region)
-     	     (define-key tuareg-mode-map [(C o) (C o)] 'split-and-execute)
-	     ))
+          '(lambda()
+             (set-default-coding-systems 'utf-8)
+             (define-key tuareg-mode-map [(C c) (C c)] 'comment-region)
+             (define-key tuareg-mode-map [(C c) (C u)] 'uncomment-region)
+             (define-key tuareg-mode-map [(C o) (C o)] 'split-and-execute)
+             (define-key tuareg-mode-map [(C m)] 'newline)
+             (global-unset-key (kbd "C-x C-i") 'iwb)
+             ))
 
-;(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
+(setq tuareg-support-metaocaml t)
+
+                                        ;(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist)) ;
 
 ;; (setq auto-mode-alist
 ;;       (append '(("\\.ml[ily]?$" . tuareg-mode)

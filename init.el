@@ -143,9 +143,6 @@
 ;;;open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
-;;;open.jsnp
-(add-to-list 'auto-mode-alist '("\\.jsnp\\'" . java-mode))
-
 ;; ;;;Show line numbers
 ;; (global-linum-mode t)
 ;; (setq linum-format "%3d\u2502")
@@ -154,8 +151,9 @@
 ;;Highlight the counterpart of the parenthesis
 (show-paren-mode 1)
 ;;Indent when start a new line
-(global-set-key "\C-m" 'newline-and-indent)
+(global-set-key "\C-m" 'newline)
 ;;Assign find-function
+
 (find-function-setup-keys)
 
 
@@ -226,13 +224,16 @@
 
 (setq make-backup-files nil)
 
+(setq-default indent-tabs-mode nil)
+
 (global-set-key "\C-h" 'delete-backward-char)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(tuareg-fun-indent 0)
+ '(tuareg-support-metaocaml t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -259,5 +260,6 @@
  '(org-level-5 ((t (:foreground "color-23"))))
  '(org-table ((t (:foreground "brightblue"))))
  '(term ((t (:foreground "color-189"))))
- '(tuareg-font-lock-governing-face ((t (:foreground "color-40"))))
+ '(tuareg-font-lock-governing-face ((t (:foreground "color-38"))))
+ '(tuareg-font-lock-multistage-face ((t (:foreground "color-245" :weight bold))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))

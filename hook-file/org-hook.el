@@ -11,6 +11,9 @@
 (setq org-src-fontify-natively t)
 
 ;;;Enable color(only editting)
+(setq org-use-sub-superscripts nil)
+
+;;;Enable color(only editting)
 (setq org-list-allow-alphabetical nil)
 
 ;;;Display entities as UTF-8 characters.(Toggle by C-c C-x \)
@@ -49,6 +52,37 @@
 \\usepackage{titlesec}
 \\hypersetup{setpagesize=false,colorlinks=true}
 \\usepackage[ipa]{luatexja-preset}
+\\usepackage{listings}
+\\usepackage{color}
+\\usepackage{fontspec}
+\\setmonofont{Ricty}
+\\lstset{
+  captionpos=b,
+  caption=\\relax,
+  frame=trBL,
+  %frame=shadowbox,
+  %rulesepcolor=\\color{blue},
+  frameround=nnnn,
+  showstringspaces=false,
+  stringstyle={\\ttfamily \\color[rgb]{0.7,0.2,0}},
+  commentstyle={\\itshape \\color[rgb]{0,0.5,0.5}},
+  identifierstyle={\\ttfamily \\color[rgb]{0,0,0}},
+  keywordstyle={\\ttfamily \\color[rgb]{0.05,0.4,0.05}},
+  basicstyle={\\ttfamily \\footnotesize},
+  backgroundcolor={\\color[rgb]{0.98,0.98,0.98}},
+  breaklines=true,
+  xleftmargin=20pt,
+  xrightmargin=20pt,
+  framerule=.1pt,
+  columns=[l]{fullflexible},
+  numbers=left,
+  stepnumber=1,
+  numberstyle={\\small \\color[rgb]{0.5,0.5,0.5}},
+  numbersep=1em,
+  language={caml},
+  lineskip=-2.7pt,
+  literate = *{\\ }{\\ }1 %substitute {1 space} with {1 space}
+}
 \\titlespacing\\section{0pt}{10pt plus 3pt minus 3pt}{0pt plus 2pt minus 2pt}
 \\titlespacing\\subsection{0pt}{6pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}
 \\titlespacing\\subsubsection{0pt}{3pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}

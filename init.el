@@ -24,7 +24,6 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/powerline")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/php-mode-1.5.0")
 
-
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
@@ -42,13 +41,6 @@
 ;;
 (global-set-key (kbd "C-x r") 'replace-regexp)
 
-;;
-;;Auto Complete
-;;
-(require 'auto-complete)
-(global-auto-complete-mode t)
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;;
 ;;Bison mode

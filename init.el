@@ -84,9 +84,7 @@
 (defun iwb ()
   "indent whole buffer"
   (interactive)
-  (delete-trailing-whitespace)
-  (indent-region (point-min) (point-max) nil)
-  (untabify (point-min) (point-max)))
+  (indent-region (point-min) (point-max) nil))
 (global-set-key (kbd "C-x C-i") 'iwb)
 
 ;;
@@ -204,6 +202,8 @@
 
 (setq visible-bell nil)
 
+(setq colum-number-mode t)
+
 (menu-bar-mode 0)
 
 (tool-bar-mode 0)
@@ -249,4 +249,3 @@
  '(tuareg-font-lock-governing-face ((t (:foreground "color-38"))))
  '(tuareg-font-lock-multistage-face ((t (:foreground "color-245" :weight bold))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))
-

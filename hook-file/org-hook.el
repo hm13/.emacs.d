@@ -83,12 +83,12 @@
   lineskip=-2.7pt,
   literate = *{\\ }{\\ }1 %substitute {1 space} with {1 space}
 }
-\\titlespacing\\section{0pt}{10pt plus 3pt minus 3pt}{0pt plus 2pt minus 2pt}
-\\titlespacing\\subsection{0pt}{6pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}
-\\titlespacing\\subsubsection{0pt}{3pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}
-\\setlength{\\textwidth}{6.5in}
+\\titlespacing\\section{0pt}{15pt plus 3pt minus 3pt}{0pt plus 2pt minus 2pt}
+\\titlespacing\\subsection{0pt}{10pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}
+\\titlespacing\\subsubsection{0pt}{5pt plus 3pt minus 2pt}{0pt plus 2pt minus 2pt}
+\\setlength{\\textwidth}{6.1in}
 \\setlength{\\textheight}{9.2in}
-\\setlength{\\oddsidemargin}{-0.4in}%左から1in基準での本文左端までの幅
+\\setlength{\\oddsidemargin}{-0.3in}%左から1in基準での本文左端までの幅
 \\setlength{\\topmargin}{-0.7in}%上から1in基準でのヘッダの上までの幅
 \\setlength{\\headsep}{0in}%ヘッダー下から本文上までの幅"
 ("\\section{%s}" . "\\section*{%s}")

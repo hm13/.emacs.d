@@ -9,7 +9,7 @@
 (require 'asm-hook)
 (require 'ruby-hook)
 (require 'latex-hook)
-(require 'coq-hook)
+;(require 'coq-hook)
 (require 'markdown-hook)
 (require 'python-hook)
 
@@ -218,6 +218,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-file-apps (quote (("pdf" . "mupdf %s"))))
  '(tuareg-fun-indent 0)
  '(tuareg-support-metaocaml t))
 (custom-set-faces
@@ -247,5 +248,5 @@
  '(org-table ((t (:foreground "brightblue"))))
  '(term ((t (:foreground "color-189"))))
  '(tuareg-font-lock-governing-face ((t (:foreground "color-38"))))
- '(tuareg-font-lock-multistage-face ((t (:foreground "color-245" :weight bold))))
+ '(tuareg-font-lock-multistage-face ((t (:foreground "color-28" :weight bold))))
  '(tuareg-font-lock-operator-face ((t (:foreground "color-185")))))

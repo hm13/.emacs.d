@@ -7,9 +7,9 @@
 	     (define-key c-mode-base-map [(C c) (C c)] 'comment-or-uncomment-region)
 	     (setq comment-style 'multi-line)
 	     (c-set-style "linux")
-	     (setq c-basic-offset 3) ;インデント幅
+	     (setq c-basic-offset 3) ;depth of indentation
 	     (setq tab-width c-basic-offset)
-	     (setq indent-tabs-mode t) ;インデントはタブで
+	     (setq indent-tabs-mode nil) ; use spaces as indent
 	     ;; RET キーで自動改行+インデント
 	     (define-key c-mode-base-map "\C-m" 'newline-and-indent)
 	     (define-key c-mode-base-map (kbd "M-j") 'ace-jump-mode)

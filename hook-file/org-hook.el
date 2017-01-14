@@ -45,17 +45,14 @@
 (setq org-latex-default-class "my-class")
 (add-to-list 'org-latex-classes
              '("my-class"
-               "\\documentclass[11pt,a4paper,papersize]{ltjsarticle}
+               "\\documentclass[10pt,a4paper]{jarticle}
 [NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
 \\usepackage{hyperref}
 \\usepackage{graphicx}
 \\usepackage{titlesec}
-\\hypersetup{setpagesize=false,colorlinks=true}
-\\usepackage[ipa]{luatexja-preset}
 \\usepackage{listings}
 \\usepackage{color}
-\\usepackage{fontspec}
-\\setmonofont{Ricty}
 \\lstset{
   captionpos=b,
   caption=\\relax,
@@ -79,7 +76,7 @@
   stepnumber=1,
   numberstyle={\\small \\color[rgb]{0.5,0.5,0.5}},
   numbersep=1em,
-  language={caml},
+  language={c},
   lineskip=-2.7pt,
   literate = *{\\ }{\\ }1 %substitute {1 space} with {1 space}
 }
@@ -98,11 +95,12 @@
 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
 ))
 
+;; for my-class
 (setq org-latex-pdf-process
-      '("lualatex %f bibtex handout lualatex %f" "lualatex %f" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
+      '("platex %b && dvipdfm %b" "xdotool key --window `xdotool search mupdf | head -1` --clearmodifiers r"
         ))
 
 (setq org-file-apps
-      '(("pdf" . "evince %s")))
+      '(("pdf" . "mupdf %s")))
 
 (provide 'org-hook)

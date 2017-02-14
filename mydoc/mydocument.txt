@@ -1,6 +1,10 @@
 //
 // Memo
 //
+
+------Apply script and save------
+for i in *enc.pl; do ./enc2hep.rb $i > ${i//enc.pl/hep}; done
+
 ------Change face------
 M-x customize-face -> all
 

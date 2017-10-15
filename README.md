@@ -1,3 +1,3 @@
 .emacs.d
 ========
-This is my emacs config files.
+My emacs config files.

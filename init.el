@@ -1,7 +1,14 @@
 ;;
-;; Hooks
+;; Load Path
 ;;
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
+(add-to-list 'load-path "~/.emacs.d/auto-install")
 (add-to-list 'load-path "~/.emacs.d/hook-file")
+
+;;
+;; Config for each major mode
+;;
 (require 'ocaml-hook)
 (require 'c-hook)
 (require 'c++-hook)
@@ -13,33 +20,9 @@
 (require 'markdown-hook)
 (require 'python-hook)
 
-;;
-;; Load Path
-;;
-(add-to-list 'load-path "~/.emacs.d/mydoc/")
-(add-to-list 'load-path "~/.emacs.d/auto-install")
-(add-to-list 'load-path "~/.emacs.d/elpa/org-20130204")
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/powerline")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/php-mode-1.5.0")
-
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  )
-
-;;
-;;Commenting
-;;
-(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
-
-
-;;
-;;Replace string
-;;
-(global-set-key (kbd "C-x r") 'replace-regexp)
+(require 'package)
+(package-initialize)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 
 ;;
@@ -47,139 +30,52 @@
 ;;
 (load "~/.emacs.d/site-lisp/bison-mode.el")
 
-
-;;
-;;PHP mode
-;;
-(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode));;;Load Path Config
-
-
-;;
-;;Color Config
-;;
-
-;;Mode Line
-(set-face-background 'mode-line-inactive "gray10")
-(set-face-foreground 'mode-line-inactive "gray70")
-
-;;Mini Buffer
-(set-face-foreground 'minibuffer-prompt "color-46") ;M-x
-
-;;Source
-(set-face-foreground 'font-lock-comment-face "cyan")
-(set-face-foreground 'font-lock-string-face  "color-203")
-(set-face-foreground 'font-lock-keyword-face "color-43")
-(set-face-foreground 'font-lock-function-name-face "brightblue")
-(set-face-foreground 'font-lock-variable-name-face "brightyellow")
-(set-face-foreground 'font-lock-type-face "brightgreen")
-(set-face-foreground 'font-lock-builtin-face "color-30")
-(set-face-foreground 'font-lock-constant-face "magenda")
-(set-face-foreground 'font-lock-warning-face "red")
-
-
-;;
-;;Indent Current Buffer
-;;
-(defun iwb ()
-  "indent whole buffer"
-  (interactive)
-  (indent-region (point-min) (point-max) nil))
-(global-set-key (kbd "C-x C-i") 'iwb)
-
 ;;
 ;; Ace Jump Mode
 ;;
-(autoload
-  'ace-jump-mode
-  "ace-jump-mode"
-  "Emacs quick move minor mode"
-  t)
-
+(autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (global-set-key (kbd "M-j") 'ace-jump-mode)
 
 
-
-(defadvice compile (after compile-aftercheck activate compile)
-  "Adds a function of windows auto-close."
-  (let ((proc (get-buffer-process "*compilation*")))
-    (if (and proc yel-compile-auto-close)
-        (set-process-sentinel proc 'yel-compile-teardown))))
-
-(defun yel-compile-teardown (proc status)
-  "Closes window automatically, if compile succeed."
-  (let ((ps (process-status proc)))
-    (if (eq ps 'exit)
-        (if (eq 0 (process-exit-status proc))
-            (progn
-              ;;(delete-other-window)
-              (message "Compile Success! Running on eshell...")
-              (switch-to-buffer-other-window "*compilation*")
-              ;;(kill-buffer "*compilation*)
-              (eshell)
-              (eshell-send-input)
-              )
-          (message "Compile Failure")))
-    (if (eq ps 'signal)
-        (message "Compile Abnormal and"))))
-
-
-;;;open .h file in c-mode
+;;; open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
-;; ;;;Show line numbers
+;; ;;; Show line numbers
 ;; (global-linum-mode t)
 ;; (setq linum-format "%3d\u2502")
 ;; (set-face-attribute 'linum nil :foreground "#AAA")
 
-;;Highlight the counterpart of the parenthesis
-(show-paren-mode 1)
-;;Indent when start a new line
-(global-set-key "\C-m" 'newline)
-;;Assign find-function
 
-(find-function-setup-keys)
-
-
-;;;Don't divide window when type C-x C-b
+;; Don't divide window when type C-x C-b
 (global-set-key [(C x) (C b)] 'buffer-menu)
 
+;; Scroll buffer
+(global-set-key "\M-p" (lambda () (interactive) (scroll-down 1) (forward-line -1)))
+(global-set-key "\M-n" (lambda () (interactive) (scroll-up   1) (forward-line  1)))
 
-;;;Turncate lines on the right side
-(setq turncate-lines t)
+;; Open files
+(global-set-key "\M-d" (lambda () (interactive) (find-file "~/.emacs.d/mydoc/mydocument.txt")))
+(global-set-key "\M-s" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 
-;;;Scroll buffer
-(setq SC_LINE_NUM 1)
-(global-set-key "\M-p"
-                (lambda ()
-                  (interactive)
-                  (scroll-down SC_LINE_NUM)
-                  (forward-line (* -1 SC_LINE_NUM))
-                  ))
-(global-set-key "\M-n"
-                (lambda ()
-                  (interactive)
-                  (scroll-up SC_LINE_NUM)
-                  (forward-line SC_LINE_NUM)
-                  ))
+;; Indent Current Buffer
+(global-set-key (kbd "C-x C-i") (lambda () (interactive) (indent-region (point-min) (point-max) nil)))
 
-;;;Open mydocument.txt
-(global-set-key (kbd "M-d")
-                (lambda ()
-                  (interactive)
-                  (find-file "~/.emacs.d/mydoc/mydocument.txt")
-                  ))
-
-;;;Open init.el
-(global-set-key (kbd "M-s")
-                (lambda ()
-                  (interactive)
-                  (find-file "~/.emacs.d/init.el")
-                  ))
-
-;;;Change window size
+;; Change window size
 (global-set-key "\M-h" 'enlarge-window)
 (global-set-key "\M-w" 'enlarge-window-horizontally)
+
+;; Commenting
+(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
+
+;; Replace string
+(global-set-key (kbd "C-x r") 'replace-regexp)
+
+;; Indent when start a new line
+(global-set-key "\C-m" 'newline)
+
+;; Backspace
+(global-set-key "\C-h" 'delete-backward-char)
+
 
 ;;;Clear eshell buffer
 (defun eshell/cls ()
@@ -196,21 +92,38 @@
 (define-key global-map "\C-t" 'other-window-or-split)
 
 
-(setq scroll-step 1)
-
-(setq inhibit-startup-message t)
-
-(setq visible-bell nil)
-
+;;
+;; Misc
+;;
 (menu-bar-mode 0)
-
 (tool-bar-mode 0)
-
+(find-function-setup-keys) ;; Assign find-function
+(show-paren-mode 1) ;; Highlight the counterpart parenthesis
+(setq scroll-step 1)
+(setq inhibit-startup-message t)
+(setq visible-bell nil)
+(setq turncate-lines t)
 (setq make-backup-files nil)
-
 (setq-default indent-tabs-mode nil)
 
-(global-set-key "\C-h" 'delete-backward-char)
+
+;;
+;; Color Config
+;;
+(set-face-background 'mode-line-inactive "gray10")  ;; Mode Line
+(set-face-foreground 'mode-line-inactive "gray70")  ;; Mode Line
+(set-face-foreground 'minibuffer-prompt  "color-46") ;; Mini Buffer (M-x)
+(set-face-foreground 'font-lock-comment-face "cyan")
+(set-face-foreground 'font-lock-string-face  "color-203")
+(set-face-foreground 'font-lock-keyword-face "color-43")
+(set-face-foreground 'font-lock-function-name-face "brightblue")
+(set-face-foreground 'font-lock-variable-name-face "brightyellow")
+(set-face-foreground 'font-lock-type-face     "brightgreen")
+(set-face-foreground 'font-lock-builtin-face  "color-30")
+(set-face-foreground 'font-lock-constant-face "magenda")
+(set-face-foreground 'font-lock-warning-face  "red")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

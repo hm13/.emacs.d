@@ -4,6 +4,7 @@
 
 ------Apply script and save------
 for i in *enc.pl; do ./enc2hep.rb $i > ${i//enc.pl/hep}; done
+for f in `find . -name "*.pl"`; do ./enc2hep_RAHFT2.rb $f > ${f//.pl/.hcs}; done
 
 ------Change face------
 M-x customize-face -> all

@@ -4,21 +4,22 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
 (add-to-list 'load-path "~/.emacs.d/auto-install")
-(add-to-list 'load-path "~/.emacs.d/hook-file")
+(add-to-list 'load-path "/home/hirsakam/.emacs.d/hook-file")
 
 ;;
 ;; Config for each major mode
 ;;
-(require 'ocaml-hook)
-(require 'c-hook)
-(require 'c++-hook)
-(require 'org-hook)
-(require 'asm-hook)
-(require 'ruby-hook)
-(require 'latex-hook)
-(require 'coq-hook)
-(require 'markdown-hook)
-(require 'python-hook)
+;(require 'ocaml-hook)
+;(require 'c-hook)
+;(require 'c++-hook)
+;(require 'org-hook)
+;(require 'asm-hook)
+;(require 'ruby-hook)
+;(require 'latex-hook)
+;(require 'coq-hook)
+;(require 'markdown-hook)
+;(require 'python-hook)
+(require 'lua-hook)
 
 (require 'package)
 (package-initialize)
@@ -105,6 +106,7 @@
 (setq turncate-lines t)
 (setq make-backup-files nil)
 (setq-default indent-tabs-mode nil)
+(setq scroll-conservatively 1)
 
 
 ;;

@@ -1,9 +1,9 @@
 ;;
 ;; Load Path
 ;;
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
-(add-to-list 'load-path "~/.emacs.d/auto-install")
+(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp")
+(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp/org/lisp")
+(add-to-list 'load-path "/home/hirsakam/.emacs.d/auto-install")
 (add-to-list 'load-path "/home/hirsakam/.emacs.d/hook-file")
 
 ;;
@@ -17,7 +17,7 @@
 ;(require 'ruby-hook)
 ;(require 'latex-hook)
 ;(require 'coq-hook)
-;(require 'markdown-hook)
+(require 'markdown-hook)
 ;(require 'python-hook)
 (require 'lua-hook)
 
@@ -25,6 +25,10 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
 ;;
 ;;Bison mode

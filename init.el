@@ -1,39 +1,33 @@
 ;;
 ;; Load Path
 ;;
-(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp")
-(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp/org/lisp")
-(add-to-list 'load-path "/home/hirsakam/.emacs.d/auto-install")
-(add-to-list 'load-path "/home/hirsakam/.emacs.d/hook-file")
+;(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp")
+;(add-to-list 'load-path "/home/hirsakam/.emacs.d/site-lisp/org/lisp")
+;(add-to-list 'load-path "/home/hirsakam/.emacs.d/auto-install")
+;(add-to-list 'load-path "/home/hirsakam/.emacs.d/lang-config")
 
 ;;
 ;; Config for each major mode
 ;;
-;(require 'ocaml-hook)
-;(require 'c-hook)
-;(require 'c++-hook)
-;(require 'org-hook)
-;(require 'asm-hook)
-;(require 'ruby-hook)
-;(require 'latex-hook)
-;(require 'coq-hook)
-(require 'markdown-hook)
-;(require 'python-hook)
-(require 'lua-hook)
+;(require 'ocaml-config)
+;(require 'c-config)
+;(require 'c++-config)
+;(require 'org-config)
+;(require 'ruby-config)
+;(require 'latex-config)
+;(require 'coq-config)
+;(require 'markdown-config)
+;(require 'python-config)
+;(require 'lua-config)
 
 (require 'package)
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
-
-;;
-;;Bison mode
-;;
-(load "~/.emacs.d/site-lisp/bison-mode.el")
+;(require 'yaml-mode)
+;(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+;(require 'yaml-mode)
+;(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
 ;;
 ;; Ace Jump Mode
@@ -41,15 +35,13 @@
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (global-set-key (kbd "M-j") 'ace-jump-mode)
 
-
 ;;; open .h file in c-mode
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 
-;; ;;; Show line numbers
-;; (global-linum-mode t)
-;; (setq linum-format "%3d\u2502")
-;; (set-face-attribute 'linum nil :foreground "#AAA")
-
+;;; Show line numbers
+;(global-linum-mode t)
+;(setq linum-format "%3d\u2502")
+;(set-face-attribute 'linum nil :foreground "#AAA")
 
 ;; Don't divide window when type C-x C-b
 (global-set-key [(C x) (C b)] 'buffer-menu)
@@ -59,7 +51,7 @@
 (global-set-key "\M-n" (lambda () (interactive) (scroll-up   1) (forward-line  1)))
 
 ;; Open files
-(global-set-key "\M-d" (lambda () (interactive) (find-file "~/.emacs.d/mydoc/mydocument.txt")))
+(global-set-key "\M-d" (lambda () (interactive) (find-file "~/.emacs.d/doc.txt")))
 (global-set-key "\M-s" (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 
 ;; Indent Current Buffer
@@ -101,7 +93,6 @@
 ;; Misc
 ;;
 (menu-bar-mode 0)
-(tool-bar-mode 0)
 (find-function-setup-keys) ;; Assign find-function
 (show-paren-mode 1) ;; Highlight the counterpart parenthesis
 (setq scroll-step 1)
